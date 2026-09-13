@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #2d7a68;
+  --color-primary-dark: #1d5d4e;
+  --color-accent: #f6b84c;
+  --color-background: #f5fbf7;
+  --color-surface: #ffffff;
+  --color-text: #17332c;
+  --color-text-muted: #526b63;
+  --color-focus: #195bdf;
+  --font-family-base: "Nunito", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+  --radius-medium: 0.75rem;
+  --space-3: 1rem;
+  --space-5: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.app-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: var(--space-3);
+}
+
+:focus-visible {
+  outline: 0.2rem solid var(--color-focus);
+  outline-offset: 0.2rem;
+}
