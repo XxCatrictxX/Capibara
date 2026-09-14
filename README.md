@@ -11,7 +11,7 @@ npm install
 npm start
 ```
 
-Después abre [http://localhost:5173](http://localhost:5173) en el navegador. Para detenerlo, usa `Ctrl+C` en la terminal. Si abres el archivo directamente, la página mostrará esta misma indicación sin generar errores en la consola.
+Después abre [http://localhost:5173](http://localhost:5173) en el navegador. Para detenerlo, usa `Ctrl+C` en la terminal. No abras `index.html` directamente: Vite debe procesar los módulos ES antes de servirlos.
 
 ## Estructura
 
@@ -24,3 +24,7 @@ La estructura sigue la especificación técnica y separa el motor, actividades, 
 3. En Vercel, configura esas mismas variables en **Project Settings → Environment Variables** y vuelve a desplegar.
 
 No uses ni publiques una clave `service_role` o secret key en el navegador.
+
+## Diagnóstico de Supabase
+
+Tras desplegar, abre `https://tu-dominio.vercel.app/?test_db=1` y revisa la consola del navegador. El diagnóstico informa si faltan variables, si la red no llega a Supabase o si la conexión funciona; nunca imprime la clave pública.

@@ -10,4 +10,8 @@ if (appRoot) {
   const gameEngine = createGameEngine({ sessionService });
   createScreenManager({ root: appRoot, gameEngine });
   gameEngine.beginRegistration();
+
+  if (new URLSearchParams(window.location.search).has('test_db')) {
+    import('./services/test_db.js').then(({ runDatabaseDiagnostics }) => runDatabaseDiagnostics());
+  }
 }

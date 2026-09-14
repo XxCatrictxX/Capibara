@@ -18,25 +18,6 @@
         <p>Cargando la misión.</p>
       </section>
     </main>
-    <script>
-      const appRoot = document.querySelector('#app');
-
-      if (window.location.protocol === 'file:') {
-        appRoot.replaceChildren();
-        const card = document.createElement('section');
-        card.className = 'game-card status-card';
-        const title = document.createElement('h1');
-        title.textContent = 'Inicia el proyecto con un servidor local';
-        const message = document.createElement('p');
-        message.textContent = 'Los módulos de JavaScript no pueden ejecutarse al abrir index.html directamente. En esta carpeta ejecuta npm start y abre http://localhost:5173.';
-        card.append(title, message);
-        appRoot.append(card);
-      } else {
-        const appScript = document.createElement('script');
-        appScript.type = 'module';
-        appScript.src = './src/app.js';
-        document.body.append(appScript);
-      }
-    </script>
+    <script type="module" src="./src/app.js"></script>
   </body>
 </html>
