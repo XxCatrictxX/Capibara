@@ -1,0 +1,9 @@
+export async function loadDashboardData(accessCode) {
+  const response = await fetch('/api/dashboard', {
+    headers: { 'x-teacher-access-code': accessCode },
+  });
+
+  if (response.status === 401) throw new Error('El código docente no es correcto.');
+  if (!response.ok) throw new Error('No fue posible cargar los datos del dashboard.');
+  return response.json();
+}
