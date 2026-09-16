@@ -1,4 +1,5 @@
 import { createActivity } from '../activities/activityFactory.js';
+import { createIcon } from './icons.js';
 import { createMascot } from './mascot.js';
 
 function appendJustification(form, activity) {
@@ -78,64 +79,200 @@ function addDragDropControls(form, options) {
   const zones = [...new Set(options.map((option) => option.zone))];
   const placements = new Map();
   let selectedId = null;
+  let accessibleMode = false;
+  let drag = null;
   const tokenButtons = new Map();
+  const zoneElements = new Map();
 
   const instruction = document.createElement('p');
   instruction.className = 'drag-instruction';
-  instruction.textContent = 'Selecciona un elemento y luego toca la zona donde corresponde.';
+  instruction.append(createIcon('hand'), document.createTextNode('Arrastra cada tarjeta a su grupo'));
+
+  const accessibleButton = document.createElement('button');
+  accessibleButton.type = 'button';
+  accessibleButton.className = 'accessible-mode-button';
+  accessibleButton.setAttribute('aria-pressed', 'false');
+  accessibleButton.textContent = 'Modo accesible';
+
+  const liveRegion = document.createElement('p');
+  liveRegion.className = 'visually-hidden';
+  liveRegion.setAttribute('aria-live', 'polite');
+  liveRegion.setAttribute('aria-atomic', 'true');
 
   const tokens = document.createElement('div');
   tokens.className = 'drag-tokens';
   const zonesElement = document.createElement('div');
   zonesElement.className = 'drop-zones';
 
+  function announce(message) {
+    liveRegion.textContent = '';
+    requestAnimationFrame(() => { liveRegion.textContent = message; });
+  }
+
+  function updateZoneState() {
+    zoneElements.forEach((element) => {
+      element.classList.toggle('is-filled', element.querySelector('.drag-token') !== null);
+    });
+  }
+
   function markSelection() {
-    tokenButtons.forEach((button, id) => button.classList.toggle('is-selected', id === selectedId));
+    tokenButtons.forEach((button, id) => {
+      const isSelected = id === selectedId;
+      button.classList.toggle('is-selected', isSelected);
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+  }
+
+  function placeTokenIn(token, zone, { announcePlacement = false } = {}) {
+    const target = zoneElements.get(zone);
+    if (!token || !target) return false;
+    placements.set(token.dataset.tokenId, zone);
+    target.append(token);
+    token.classList.add('is-placed');
+    updateZoneState();
+    if (announcePlacement) announce(`${token.dataset.tokenLabel} se colocó en ${zone}.`);
+    return true;
   }
 
   function placeSelectedIn(zone) {
     if (!selectedId) return;
     placements.set(selectedId, zone);
     const token = tokenButtons.get(selectedId);
-    if (token) token.classList.add('is-placed');
+    placeTokenIn(token, zone, { announcePlacement: true });
     selectedId = null;
     markSelection();
   }
+
+  function getZoneAt(clientX, clientY) {
+    return [...zoneElements.entries()].find(([, element]) => {
+      const bounds = element.getBoundingClientRect();
+      return clientX >= bounds.left && clientX <= bounds.right && clientY >= bounds.top && clientY <= bounds.bottom;
+    });
+  }
+
+  function setActiveZone(zone) {
+    zoneElements.forEach((element, id) => element.classList.toggle('is-active', id === zone));
+  }
+
+  function removeOriginShadow() {
+    drag?.originShadow?.remove();
+  }
+
+  function finishDrag(token, { returnToOrigin = false, targetZone = null } = {}) {
+    const activeDrag = drag;
+    if (!activeDrag) return;
+    try { token.releasePointerCapture(activeDrag.pointerId); } catch { /* El navegador ya liberó el puntero. */ }
+    removeOriginShadow();
+    setActiveZone(null);
+    drag = null;
+
+    if (returnToOrigin || !targetZone) {
+      token.classList.remove('is-dragging');
+      token.classList.add('is-returning');
+      token.style.transform = '';
+      window.setTimeout(() => token.classList.remove('is-returning'), 180);
+      return;
+    }
+
+    const tokenBounds = token.getBoundingClientRect();
+    const zoneBounds = zoneElements.get(targetZone).getBoundingClientRect();
+    const snapX = zoneBounds.left + zoneBounds.width / 2 - (tokenBounds.left + tokenBounds.width / 2);
+    const snapY = zoneBounds.top + zoneBounds.height / 2 - (tokenBounds.top + tokenBounds.height / 2);
+    token.classList.remove('is-dragging');
+    token.classList.add('is-snapping');
+    token.style.transform = `translate(${activeDrag.deltaX + snapX}px, ${activeDrag.deltaY + snapY}px)`;
+    window.setTimeout(() => {
+      token.style.transform = '';
+      token.classList.remove('is-snapping');
+      placeTokenIn(token, targetZone);
+    }, 140);
+  }
+
+  function enableAccessibleMode() {
+    if (accessibleMode) return;
+    accessibleMode = true;
+    accessibleButton.setAttribute('aria-pressed', 'true');
+    accessibleButton.textContent = 'Modo accesible activado';
+    announce('Modo accesible activado. Selecciona una tarjeta y luego una zona de destino.');
+  }
+
+  form.addEventListener('keydown', (event) => {
+    if (event.key === 'Tab') enableAccessibleMode();
+  });
+  accessibleButton.addEventListener('click', enableAccessibleMode);
 
   options.forEach((option) => {
     const token = document.createElement('button');
     token.type = 'button';
     token.className = 'drag-token';
     token.textContent = option.label;
+    token.dataset.tokenId = option.id;
+    token.dataset.tokenLabel = option.label;
+    token.setAttribute('aria-pressed', 'false');
     tokenButtons.set(option.id, token);
     token.addEventListener('pointerdown', (event) => {
-      selectedId = option.id;
+      if (accessibleMode || (event.pointerType === 'mouse' && event.button !== 0)) return;
+      event.preventDefault();
+      const bounds = token.getBoundingClientRect();
+      const originShadow = document.createElement('div');
+      originShadow.className = 'drag-origin-shadow';
+      Object.assign(originShadow.style, { left: `${bounds.left}px`, top: `${bounds.top}px`, width: `${bounds.width}px`, height: `${bounds.height}px` });
+      document.body.append(originShadow);
+      drag = {
+        pointerId: event.pointerId,
+        originShadow,
+        startX: event.clientX,
+        startY: event.clientY,
+        deltaX: 0,
+        deltaY: 0,
+      };
       token.setPointerCapture?.(event.pointerId);
-      markSelection();
+      token.classList.add('is-dragging');
+    });
+    token.addEventListener('pointermove', (event) => {
+      if (!drag || drag.pointerId !== event.pointerId) return;
+      drag.deltaX = event.clientX - drag.startX;
+      drag.deltaY = event.clientY - drag.startY;
+      token.style.transform = `translate(${drag.deltaX}px, ${drag.deltaY}px)`;
+      const zone = getZoneAt(event.clientX, event.clientY)?.[0] ?? null;
+      setActiveZone(zone);
     });
     token.addEventListener('pointerup', (event) => {
-      const zone = document.elementFromPoint(event.clientX, event.clientY)?.closest('[data-drop-zone]');
-      if (zone) placeSelectedIn(zone.dataset.dropZone);
+      if (!drag || drag.pointerId !== event.pointerId) return;
+      finishDrag(token, { targetZone: getZoneAt(event.clientX, event.clientY)?.[0] ?? null });
+    });
+    token.addEventListener('pointercancel', (event) => {
+      if (drag?.pointerId === event.pointerId) finishDrag(token, { returnToOrigin: true });
     });
     token.addEventListener('click', () => {
+      if (!accessibleMode) return;
       selectedId = option.id;
       markSelection();
+      announce(`${option.label} seleccionado. Elige una zona de destino.`);
     });
     tokens.append(token);
   });
 
   zones.forEach((zone) => {
-    const zoneButton = document.createElement('button');
-    zoneButton.type = 'button';
-    zoneButton.className = 'drop-zone';
-    zoneButton.dataset.dropZone = zone;
-    zoneButton.textContent = zone;
-    zoneButton.addEventListener('pointerup', () => placeSelectedIn(zone));
-    zoneButton.addEventListener('click', () => placeSelectedIn(zone));
-    zonesElement.append(zoneButton);
+    const zoneElement = document.createElement('div');
+    zoneElement.className = 'drop-zone';
+    zoneElement.dataset.dropZone = zone;
+    zoneElement.tabIndex = 0;
+    zoneElement.setAttribute('role', 'button');
+    zoneElement.setAttribute('aria-label', `Zona de destino: ${zone}`);
+    zoneElement.append(Object.assign(document.createElement('span'), { className: 'drop-zone__label', textContent: zone }));
+    zoneElement.addEventListener('click', () => { if (accessibleMode) placeSelectedIn(zone); });
+    zoneElement.addEventListener('keydown', (event) => {
+      if (accessibleMode && (event.key === 'Enter' || event.key === ' ')) {
+        event.preventDefault();
+        placeSelectedIn(zone);
+      }
+    });
+    zoneElements.set(zone, zoneElement);
+    zonesElement.append(zoneElement);
   });
 
-  form.append(instruction, tokens, zonesElement);
+  form.append(instruction, accessibleButton, liveRegion, tokens, zonesElement);
   return () => Object.fromEntries(placements);
 }
 
