@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "validate:activities": "node scripts/validateActivities.mjs"
   },
   "devDependencies": {
     "vite": "^7.0.0"

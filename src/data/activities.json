@@ -8,11 +8,58 @@
           "id": "vida_001",
           "themeId": "como_sabemos_que_esta_vivo",
           "type": "single_choice",
-          "requiresJustification": true,
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "En un jardín de Piura, ¿qué observación muestra que un algarrobo es un ser vivo?", "options": ["Da sombra", "Produce nuevas hojas", "Tiene tronco marrón", "Está junto a una vereda"], "correctAnswer": "Produce nuevas hojas" },
-            "2": { "question": "¿Qué hace un algarrobo vivo que ayuda a saber que está vivo?", "options": ["Crece hojas nuevas", "No se mueve nunca", "Es de color verde", "Está en un parque"], "correctAnswer": "Crece hojas nuevas" },
-            "3": { "question": "Un ser vivo cambia y crece. Como una planta que saca hojas nuevas, ¿qué hace el algarrobo?", "hint": "Busca la acción que muestra crecimiento.", "analogy": "Así como tú creces, una planta también puede crecer hojas nuevas.", "options": ["Saca hojas nuevas", "Es una roca", "Es de plástico"], "correctAnswer": "Saca hojas nuevas" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En el algarrobal de Chulucanas, una rama seca cayó al suelo y cerca hay un brote verde de algarrobo. Don Tomás dice que la rama seca sigue viva porque aún no se ha podrido. ¿Qué evidencia científica demuestra que solo el brote verde está vivo?",
+              "options": [
+                "El brote verde absorbe nutrientes del suelo y hace fotosíntesis para crecer",
+                "La rama seca está viva porque no ha cambiado su color marrón",
+                "El brote verde está vivo solo porque es de color verde",
+                "La rama seca está viva porque permanece quieta en el suelo"
+              ],
+              "correctAnswer": "El brote verde absorbe nutrientes del suelo y hace fotosíntesis para crecer",
+              "distractorInsights": {
+                "La rama seca está viva porque no ha cambiado su color marrón": "Confunde la conservación física del material orgánico con la actividad biológica.",
+                "El brote verde está vivo solo porque es de color verde": "Asocia la vida únicamente con la presencia de pigmento verde y no con las funciones vitales.",
+                "La rama seca está viva porque permanece quieta en el suelo": "Confunde la inmovilidad física con el estado de vida de un organismo."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "DATO CLAVE: Un ser vivo realiza funciones vitales activas como la nutrición y el crecimiento. La materia inerte o muerta no realiza funciones vitales, aunque conserve su forma.\n\nEn el algarrobal de Chulucanas, una rama seca cayó al suelo y cerca hay un brote verde de algarrobo. Don Tomás dice que la rama seca sigue viva porque aún no se ha podrido. ¿Qué evidencia científica demuestra que solo el brote verde está vivo?",
+              "options": [
+                "El brote verde absorbe nutrientes del suelo y hace fotosíntesis para crecer",
+                "La rama seca está viva porque no ha cambiado su color marrón",
+                "El brote verde está vivo solo porque es de color verde",
+                "La rama seca está viva porque permanece quieta en el suelo"
+              ],
+              "correctAnswer": "El brote verde absorbe nutrientes del suelo y hace fotosíntesis para crecer",
+              "distractorInsights": {
+                "La rama seca está viva porque no ha cambiado su color marrón": "Confunde la conservación física del material orgánico con la actividad biológica.",
+                "El brote verde está vivo solo porque es de color verde": "Asocia la vida únicamente con la presencia de pigmento verde y no con las funciones vitales.",
+                "La rama seca está viva porque permanece quieta en el suelo": "Confunde la inmovilidad física con el estado de vida de un organismo."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Una mesa de madera cortada se mantiene firme durante años en una casa, pero no absorbe agua ni saca brotes porque está muerta. En cambio, una plántula en el jardín absorbe agua del suelo y produce hojas nuevas porque está viva.\n\nAplicando este razonamiento al algarrobal de Chulucanas, donde hay una rama seca en el suelo y un brote verde de algarrobo: ¿Qué evidencia científica demuestra que solo el brote verde está vivo?",
+              "hint": "Identifica cuál de las dos partes realiza actividades biológicas de nutrición y crecimiento.",
+              "analogy": "Una mesa de madera no crece ni se alimenta aunque no se pudra; el brote de algarrobo sí realiza funciones vitales.",
+              "options": [
+                "El brote verde absorbe nutrientes del suelo y hace fotosíntesis para crecer",
+                "La rama seca está viva porque no ha cambiado su color marrón",
+                "El brote verde está vivo solo porque es de color verde",
+                "La rama seca está viva porque permanece quieta en el suelo"
+              ],
+              "correctAnswer": "El brote verde absorbe nutrientes del suelo y hace fotosíntesis para crecer",
+              "distractorInsights": {
+                "La rama seca está viva porque no ha cambiado su color marrón": "Confunde la conservación física del material orgánico con la actividad biológica.",
+                "El brote verde está vivo solo porque es de color verde": "Asocia la vida únicamente con la presencia de pigmento verde y no con las funciones vitales.",
+                "La rama seca está viva porque permanece quieta en el suelo": "Confunde la inmovilidad física con el estado de vida de un organismo."
+              }
+            }
           }
         },
         {
@@ -21,17 +68,126 @@
           "type": "fill_blank",
           "requiresJustification": false,
           "levels": {
-            "1": { "question": "Completa: Un cachorro demuestra que está vivo porque puede ____ y responder a lo que ocurre a su alrededor.", "options": ["crecer", "oxidarse", "romperse", "ser fabricado"], "correctAnswer": "crecer" },
-            "2": { "question": "Completa: Un cachorro vivo puede ____ cuando pasa el tiempo.", "options": ["crecer", "quedarse igual siempre", "ser una piedra", "ser de metal"], "correctAnswer": "crecer" },
-            "3": { "question": "Completa: Igual que tú, un cachorro vivo puede ____.", "hint": "Piensa en un bebé que se hace más grande.", "analogy": "Los seres vivos crecen como los niños al pasar los años.", "options": ["crecer", "ser una mesa", "ser una pelota"], "correctAnswer": "crecer" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En una roca caliente de Talara, una lagartija descansa al sol. Cuando la sombra de un ave cazadora pasa sobre ella, la lagartija corre rápidamente a refugiarse en una grieta. Esta acción demuestra que la lagartija está viva porque puede ____.",
+              "options": [
+                "responder activamente a estímulos de su entorno para sobrevivir",
+                "moverse impulsada únicamente por la fuerza del viento del desierto",
+                "descomponerse para cambiar de lugar sobre la roca",
+                "reproducirse de forma inmediata al sentir el calor del sol"
+              ],
+              "correctAnswer": "responder activamente a estímulos de su entorno para sobrevivir",
+              "distractorInsights": {
+                "moverse impulsada únicamente por la fuerza del viento del desierto": "Atribuye el desplazamiento a una fuerza física externa y no a una respuesta biológica propia.",
+                "descomponerse para cambiar de lugar sobre la roca": "Confunde el proceso de descomposición orgánica con la locomoción autónoma.",
+                "reproducirse de forma inmediata al sentir el calor del sol": "Confunde la función de relación (irritabilidad) con la función de reproducción."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CHECKLIST DE OBSERVACIÓN:\n- ¿Percibe cambios en el ambiente? Sí.\n- ¿Actúa por sí misma ante el peligro? Sí.\n\nEn una roca caliente de Talara, una lagartija descansa al sol. Cuando la sombra de un ave cazadora pasa sobre ella, la lagartija corre rápidamente a refugiarse en una grieta. Esta acción demuestra que la lagartija está viva porque puede ____.",
+              "options": [
+                "responder activamente a estímulos de su entorno para sobrevivir",
+                "moverse impulsada únicamente por la fuerza del viento del desierto",
+                "descomponerse para cambiar de lugar sobre la roca",
+                "reproducirse de forma inmediata al sentir el calor del sol"
+              ],
+              "correctAnswer": "responder activamente a estímulos de su entorno para sobrevivir",
+              "distractorInsights": {
+                "moverse impulsada únicamente por la fuerza del viento del desierto": "Atribuye el desplazamiento a una fuerza física externa y no a una respuesta biológica propia.",
+                "descomponerse para cambiar de lugar sobre la roca": "Confunde el proceso de descomposición orgánica con la locomoción autónoma.",
+                "reproducirse de forma inmediata al sentir el calor del sol": "Confunde la función de relación (irritabilidad) con la función de reproducción."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Si tocas la hoja de una planta mimosa sensitiva en Sullana, la hoja se cierra de inmediato para protegerse. Esto no es un truco; es una respuesta biológica a un estímulo externo que demuestra que la planta está viva.\n\nAplicando la misma lógica a la lagartija de Talara que huye cuando ve la sombra de un ave: Esta acción demuestra que la lagartija está viva porque puede ____.",
+              "hint": "Piensa en cómo reacciona un ser vivo cuando percibe una señal o un peligro en su ambiente.",
+              "analogy": "Así como tú retiras la mano al sentir algo muy caliente, la lagartija huye al detectar la sombra del cazador.",
+              "options": [
+                "responder activamente a estímulos de su entorno para sobrevivir",
+                "moverse impulsada únicamente por la fuerza del viento del desierto",
+                "descomponerse para cambiar de lugar sobre la roca",
+                "reproducirse de forma inmediata al sentir el calor del sol"
+              ],
+              "correctAnswer": "responder activamente a estímulos de su entorno para sobrevivir",
+              "distractorInsights": {
+                "moverse impulsada únicamente por la fuerza del viento del desierto": "Atribuye el desplazamiento a una fuerza física externa y no a una respuesta biológica propia.",
+                "descomponerse para cambiar de lugar sobre la roca": "Confunde el proceso de descomposición orgánica con la locomoción autónoma.",
+                "reproducirse de forma inmediata al sentir el calor del sol": "Confunde la función de relación (irritabilidad) con la función de reproducción."
+              }
+            }
           }
         },
         {
-          "id": "vida_015", "themeId": "como_sabemos_que_esta_vivo", "type": "multiple_choice", "requiresJustification": false,
+          "id": "vida_003",
+          "themeId": "como_sabemos_que_esta_vivo",
+          "type": "group_sort",
+          "requiresJustification": true,
           "levels": {
-            "1": { "question": "Marca las acciones que muestran que una planta de Piura está viva.", "options": ["Crece", "Produce semillas", "Se alimenta de luz", "Está hecha de cemento"], "correctAnswer": ["Crece", "Produce semillas", "Se alimenta de luz"] },
-            "2": { "question": "Marca lo que puede hacer una planta viva.", "options": ["Crecer", "Tener semillas", "Ser una piedra", "Ser de plástico"], "correctAnswer": ["Crecer", "Tener semillas"] },
-            "3": { "question": "Marca una acción de una planta viva.", "hint": "Las plantas cambian y crecen.", "analogy": "Una planta crece como tú creces cada año.", "options": ["Crecer", "Ser una roca", "Ser una silla"], "correctAnswer": ["Crecer"] }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Durante una visita al río Piura, los estudiantes observan cuatro elementos: la corriente del río que arrastra arena, el fuego de una fogata que consume madera y emite calor, un renacuajo que nada activamente y un algarrobo joven que florece. Clasifica cada elemento según corresponda.",
+              "options": [
+                { "id": "renacuajo", "label": "Renacuajo del río", "group": "Ser vivo" },
+                { "id": "algarrobo", "label": "Algarrobo joven", "group": "Ser vivo" },
+                { "id": "fuego", "label": "Fuego de la fogata", "group": "Materia o fenómeno no vivo" },
+                { "id": "rio", "label": "Corriente del río", "group": "Materia o fenómeno no vivo" }
+              ],
+              "correctAnswer": {
+                "renacuajo": "Ser vivo",
+                "algarrobo": "Ser vivo",
+                "fuego": "Materia o fenómeno no vivo",
+                "rio": "Materia o fenómeno no vivo"
+              },
+              "distractorInsights": {
+                "fuego en Ser vivo": "Confunde la reacción química que consume madera y crece con la organización celular y el metabolismo biológico.",
+                "rio en Ser vivo": "Confunde el movimiento físico provocado por la gravedad con la locomoción o vida propia."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CHECKLIST DE COMPROBACIÓN BIOLÓGICA:\n- Ser vivo: tiene células, realiza fotosíntesis o metabolismo, y se reproduce.\n- Fenómeno no vivo: ocurre por reacciones químicas o físicas, sin estructura celular ni genes.\n\nClasifica los elementos observados en el río Piura:",
+              "options": [
+                { "id": "renacuajo", "label": "Renacuajo del río", "group": "Ser vivo" },
+                { "id": "algarrobo", "label": "Algarrobo joven", "group": "Ser vivo" },
+                { "id": "fuego", "label": "Fuego de la fogata", "group": "Materia o fenómeno no vivo" },
+                { "id": "rio", "label": "Corriente del río", "group": "Materia o fenómeno no vivo" }
+              ],
+              "correctAnswer": {
+                "renacuajo": "Ser vivo",
+                "algarrobo": "Ser vivo",
+                "fuego": "Materia o fenómeno no vivo",
+                "rio": "Materia o fenómeno no vivo"
+              },
+              "distractorInsights": {
+                "fuego en Ser vivo": "Confunde la reacción química que consume madera y crece con la organización celular y el metabolismo biológico.",
+                "rio en Ser vivo": "Confunde el movimiento físico provocado por la gravedad con la locomoción o vida propia."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un motor de mototaxi consume combustible, emite calor y se mueve, pero es un objeto no vivo fabricado con metales sin células. En cambio, un perro pastor come, respira y está hecho de células; por eso es un ser vivo.\n\nAplicando esta distinción a los elementos observados en el río Piura, clasifica cada uno:",
+              "hint": "Comprueba cuáles de estos elementos tienen células y cumplen todas las funciones vitales.",
+              "analogy": "El fuego consume leña como un motor consume gasolina, pero ninguno de los dos está formado por células vivas.",
+              "options": [
+                { "id": "renacuajo", "label": "Renacuajo del río", "group": "Ser vivo" },
+                { "id": "algarrobo", "label": "Algarrobo joven", "group": "Ser vivo" },
+                { "id": "fuego", "label": "Fuego de la fogata", "group": "Materia o fenómeno no vivo" },
+                { "id": "rio", "label": "Corriente del río", "group": "Materia o fenómeno no vivo" }
+              ],
+              "correctAnswer": {
+                "renacuajo": "Ser vivo",
+                "algarrobo": "Ser vivo",
+                "fuego": "Materia o fenómeno no vivo",
+                "rio": "Materia o fenómeno no vivo"
+              },
+              "distractorInsights": {
+                "fuego en Ser vivo": "Confunde la reacción química que consume madera y crece con la organización celular y el metabolismo biológico.",
+                "rio en Ser vivo": "Confunde el movimiento físico provocado por la gravedad con la locomoción o vida propia."
+              }
+            }
           }
         }
       ]
@@ -41,33 +197,183 @@
       "title": "¿Qué es un ser vivo?",
       "activities": [
         {
-          "id": "vida_003",
-          "themeId": "que_es_un_ser_vivo",
-          "type": "group_sort",
-          "requiresJustification": false,
-          "levels": {
-            "1": { "question": "Clasifica los elementos observados cerca del río Piura en ser vivo o no vivo.", "options": [{ "id": "garza", "label": "Garza", "group": "ser vivo" }, { "id": "arena", "label": "Arena", "group": "no vivo" }, { "id": "carrizo", "label": "Carrizo", "group": "ser vivo" }, { "id": "botella", "label": "Botella", "group": "no vivo" }], "correctAnswer": { "garza": "ser vivo", "arena": "no vivo", "carrizo": "ser vivo", "botella": "no vivo" } },
-            "2": { "question": "Separa en ser vivo y no vivo.", "options": [{ "id": "perro", "label": "Perro", "group": "ser vivo" }, { "id": "piedra", "label": "Piedra", "group": "no vivo" }, { "id": "flor", "label": "Flor", "group": "ser vivo" }, { "id": "silla", "label": "Silla", "group": "no vivo" }], "correctAnswer": { "perro": "ser vivo", "piedra": "no vivo", "flor": "ser vivo", "silla": "no vivo" } },
-            "3": { "question": "Separa lo que tiene vida de lo que no tiene vida.", "hint": "Los animales y las plantas tienen vida.", "analogy": "Un perro necesita alimento; una piedra no.", "options": [{ "id": "gato", "label": "Gato", "group": "ser vivo" }, { "id": "roca", "label": "Roca", "group": "no vivo" }], "correctAnswer": { "gato": "ser vivo", "roca": "no vivo" } }
-          }
-        },
-        {
           "id": "vida_004",
           "themeId": "que_es_un_ser_vivo",
-          "type": "multiple_choice",
-          "requiresJustification": true,
+          "type": "single_choice",
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "Selecciona todas las características propias de los seres vivos.", "options": ["Nacen", "Crecen", "Se reproducen", "Están hechos siempre de metal"], "correctAnswer": ["Nacen", "Crecen", "Se reproducen"] },
-            "2": { "question": "Marca lo que puede hacer un ser vivo.", "options": ["Nacer", "Crecer", "Tener descendientes", "Ser fabricado en una fábrica"], "correctAnswer": ["Nacer", "Crecer", "Tener descendientes"] },
-            "3": { "question": "Marca las acciones de un ser vivo.", "hint": "Los seres vivos nacen y crecen.", "analogy": "Como tú, una planta nace y crece.", "options": ["Nacer", "Crecer", "Ser una piedra"], "correctAnswer": ["Nacer", "Crecer"] }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En el laboratorio escolar de Catacaos, los estudiantes observan al microscopio dos muestras: agua de estanque con microorganismos transparentes y una gota de agua con polvo de tiza molida. Ven que los microorganismos se mueven por sí mismos y poseen estructuras internas delimitadas. ¿Por qué se concluye científicamente que los microorganismos son seres vivos?",
+              "options": [
+                "Porque están formados por células que realizan funciones vitales autónomas",
+                "Porque flotan en el agua al igual que las partículas de tiza",
+                "Porque son transparentes y pueden disolverse en el líquido",
+                "Porque el microscopio los crea automáticamente al enfocar la luz"
+              ],
+              "correctAnswer": "Porque están formados por células que realizan funciones vitales autónomas",
+              "distractorInsights": {
+                "Porque flotan en el agua al igual que las partículas de tiza": "Confunde la propiedad física de flotabilidad con la condición biológica de estar vivo.",
+                "Porque son transparentes y pueden disolverse en el líquido": "Confunde la apariencia óptica y la solubilidad química con la estructura biológica.",
+                "Porque el microscopio los crea automáticamente al enfocar la luz": "Cree erróneamente que los instrumentos de laboratorio generan vida en lugar de magnificarla."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CRITERIO CIENTÍFICO: Todo ser vivo, sin importar su tamaño diminuto, está constituido por al menos una célula que organiza sus procesos biológicos de nutrición y relación.\n\nEn el laboratorio escolar de Catacaos, los estudiantes observan al microscopio agua de estanque con microorganismos y agua con tiza molida. ¿Por qué se concluye científicamente que los microorganismos son seres vivos?",
+              "options": [
+                "Porque están formados por células que realizan funciones vitales autónomas",
+                "Porque flotan en el agua al igual que las partículas de tiza",
+                "Porque son transparentes y pueden disolverse en el líquido",
+                "Porque el microscopio los crea automáticamente al enfocar la luz"
+              ],
+              "correctAnswer": "Porque están formados por células que realizan funciones vitales autónomas",
+              "distractorInsights": {
+                "Porque flotan en el agua al igual que las partículas de tiza": "Confunde la propiedad física de flotabilidad con la condición biológica de estar vivo.",
+                "Porque son transparentes y pueden disolverse en el líquido": "Confunde la apariencia óptica y la solubilidad química con la estructura biológica.",
+                "Porque el microscopio los crea automáticamente al enfocar la luz": "Cree erróneamente que los instrumentos de laboratorio generan vida en lugar de magnificarla."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un grano de arena bajo el microscopio se ve grande, pero no tiene membrana ni centro de control celular ni metaboliza energía; por eso no es un ser vivo. Una ameba en cambio tiene membrana, citoplasma y núcleo, funcionando de forma autónoma; por eso es un ser vivo.\n\nAplicando esta distinción a la muestra de Catacaos: ¿Por qué se concluye científicamente que los microorganismos observados son seres vivos?",
+              "hint": "Busca la opción que menciona la unidad fundamental presente en todos los seres vivos.",
+              "analogy": "Las células son los bloques con vida de un microorganismo, mientras que el polvo de tiza son solo minerales molidos.",
+              "options": [
+                "Porque están formados por células que realizan funciones vitales autónomas",
+                "Porque flotan en el agua al igual que las partículas de tiza",
+                "Porque son transparentes y pueden disolverse en el líquido",
+                "Porque el microscopio los crea automáticamente al enfocar la luz"
+              ],
+              "correctAnswer": "Porque están formados por células que realizan funciones vitales autónomas",
+              "distractorInsights": {
+                "Porque flotan en el agua al igual que las partículas de tiza": "Confunde la propiedad física de flotabilidad con la condición biológica de estar vivo.",
+                "Porque son transparentes y pueden disolverse en el líquido": "Confunde la apariencia óptica y la solubilidad química con la estructura biológica.",
+                "Porque el microscopio los crea automáticamente al enfocar la luz": "Cree erróneamente que los instrumentos de laboratorio generan vida en lugar de magnificarla."
+              }
+            }
           }
         },
         {
-          "id": "vida_016", "themeId": "que_es_un_ser_vivo", "type": "single_choice", "requiresJustification": false,
+          "id": "vida_005",
+          "themeId": "que_es_un_ser_vivo",
+          "type": "multiple_choice",
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "¿Cuál de estos elementos es un ser vivo?", "options": ["Una lagartija", "Una bicicleta", "Una piedra", "Una cometa"], "correctAnswer": "Una lagartija" },
-            "2": { "question": "¿Cuál tiene vida?", "options": ["Un perro", "Una pelota", "Una mesa", "Un lápiz"], "correctAnswer": "Un perro" },
-            "3": { "question": "Elige el ser vivo.", "hint": "Los animales tienen vida.", "analogy": "Un perro necesita alimento, como tú.", "options": ["Perro", "Roca", "Silla"], "correctAnswer": "Perro" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Un grupo de estudiantes observa una garza blanca en los humedales de Sechura. Marca TODAS las observaciones que confirman que la garza cumple simultáneamente con las tres funciones vitales de un ser vivo.",
+              "options": [
+                "Se alimenta de peces pequeños para obtener nutrientes y energía",
+                "Vuela hacia un árbol al escuchar el acercamiento de personas",
+                "Empolla huevos en su nido para dar origen a nuevos polluelos",
+                "Está cubierta de plumas sintéticas fabricadas en una industria textil"
+              ],
+              "correctAnswer": [
+                "Se alimenta de peces pequeños para obtener nutrientes y energía",
+                "Vuela hacia un árbol al escuchar el acercamiento de personas",
+                "Empolla huevos en su nido para dar origen a nuevos polluelos"
+              ],
+              "distractorInsights": {
+                "Está cubierta de plumas sintéticas fabricadas en una industria textil": "Atribuye componentes artificiales e industriales a un organismo biológico natural."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "GUÍA DE TRES FUNCIONES VITALES:\n1. Nutrición: comer/absorber materia para obtener energía.\n2. Relación: reaccionar a lo que ocurre alrededor.\n3. Reproducción: dejar descendencia de su misma especie.\n\nEn los humedales de Sechura, marca TODAS las observaciones que confirman que la garza cumple simultáneamente con las funciones vitales de un ser vivo:",
+              "options": [
+                "Se alimenta de peces pequeños para obtener nutrientes y energía",
+                "Vuela hacia un árbol al escuchar el acercamiento de personas",
+                "Empolla huevos en su nido para dar origen a nuevos polluelos",
+                "Está cubierta de plumas sintéticas fabricadas en una industria textil"
+              ],
+              "correctAnswer": [
+                "Se alimenta de peces pequeños para obtener nutrientes y energía",
+                "Vuela hacia un árbol al escuchar el acercamiento de personas",
+                "Empolla huevos en su nido para dar origen a nuevos polluelos"
+              ],
+              "distractorInsights": {
+                "Está cubierta de plumas sintéticas fabricadas en una industria textil": "Atribuye componentes artificiales e industriales a un organismo biológico natural."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un zorro costeño en el desierto come frutos de algarrobo (nutrición), escapa del ruido del viento (relación) y cuida a sus cachorros (reproducción). Estas tres acciones juntas prueban de manera completa que es un ser vivo.\n\nAplicando este criterio biológico a la garza blanca de Sechura, selecciona TODAS las acciones que prueban que es un ser vivo:",
+              "hint": "Debes marcar únicamente las alternativas que representan procesos biológicos reales de la garza.",
+              "analogy": "Cumplir las tres funciones es como los tres pilares que sostienen la definición de un organismo vivo.",
+              "options": [
+                "Se alimenta de peces pequeños para obtener nutrientes y energía",
+                "Vuela hacia un árbol al escuchar el acercamiento de personas",
+                "Empolla huevos en su nido para dar origen a nuevos polluelos",
+                "Está cubierta de plumas sintéticas fabricadas en una industria textil"
+              ],
+              "correctAnswer": [
+                "Se alimenta de peces pequeños para obtener nutrientes y energía",
+                "Vuela hacia un árbol al escuchar el acercamiento de personas",
+                "Empolla huevos en su nido para dar origen a nuevos polluelos"
+              ],
+              "distractorInsights": {
+                "Está cubierta de plumas sintéticas fabricadas en una industria textil": "Atribuye componentes artificiales e industriales a un organismo biológico natural."
+              }
+            }
+          }
+        },
+        {
+          "id": "vida_006",
+          "themeId": "que_es_un_ser_vivo",
+          "type": "single_choice",
+          "requiresJustification": true,
+          "levels": {
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En la plaza de Sullana exhiben un prototipo de vehículo solar autónomo que consume luz con sus paneles, se mueve esquivando personas y emite alertas sonoras. Carlos afirma: 'Este vehículo está vivo porque usa energía de la luz, responde a la gente y avanza solo'. ¿Es correcta la afirmación de Carlos?",
+              "options": [
+                "No, porque carece de estructura celular, no realiza metabolismo biológico ni se reproduce",
+                "Sí, porque cualquier objeto que utilice energía y se mueva solo es un ser vivo",
+                "Sí, porque sus sensores electrónicos equivalen exactamente a los ojos de un animal",
+                "No, porque los seres vivos únicamente habitan en la naturaleza y no en la ciudad"
+              ],
+              "correctAnswer": "No, porque carece de estructura celular, no realiza metabolismo biológico ni se reproduce",
+              "distractorInsights": {
+                "Sí, porque cualquier objeto que utilice energía y se mueva solo es un ser vivo": "Equipara el movimiento mecánico y el uso de energía eléctrica con las funciones vitales biológicas.",
+                "Sí, porque sus sensores electrónicos equivalen exactamente a los ojos de un animal": "Confunde dispositivos tecnológicos sintéticos con órganos biológicos formados por tejidos.",
+                "No, porque los seres vivos únicamente habitan en la naturaleza y no en la ciudad": "Aplica un criterio erróneo basado en la ubicación geográfica en lugar de criterios biológicos."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "RECORDATORIO CIENTÍFICO:\nPara definir a un ser vivo no basta con ver movimiento o uso de energía. Debe poseer células, transformar materia orgánicamente (metabolismo) y tener la capacidad biológica de reproducirse.\n\nEn Sullana exhiben un vehículo solar que se mueve solo y esquiva obstáculos. Carlos dice que está vivo. ¿Es correcta la afirmación de Carlos?",
+              "options": [
+                "No, porque carece de estructura celular, no realiza metabolismo biológico ni se reproduce",
+                "Sí, porque cualquier objeto que utilice energía y se mueva solo es un ser vivo",
+                "Sí, porque sus sensores electrónicos equivalen exactamente a los ojos de un animal",
+                "No, porque los seres vivos únicamente habitan en la naturaleza y no en la ciudad"
+              ],
+              "correctAnswer": "No, porque carece de estructura celular, no realiza metabolismo biológico ni se reproduce",
+              "distractorInsights": {
+                "Sí, porque cualquier objeto que utilice energía y se mueva solo es un ser vivo": "Equipara el movimiento mecánico y el uso de energía eléctrica con las funciones vitales biológicas.",
+                "Sí, porque sus sensores electrónicos equivalen exactamente a los ojos de un animal": "Confunde dispositivos tecnológicos sintéticos con órganos biológicos formados por tejidos.",
+                "No, porque los seres vivos únicamente habitan en la naturaleza y no en la ciudad": "Aplica un criterio erróneo basado en la ubicación geográfica en lugar de criterios biológicos."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un reloj automático de pulsera usa energía cinética del brazo para mover sus agujas continuamente, pero no está hecho de células ni se nutre ni genera nuevos relojes pequeños; por ello es un objeto inerte tecnológico.\n\nAplicando la misma lógica al vehículo solar autónomo de Sullana: ¿Es correcta la afirmación de Carlos de que el vehículo está vivo?",
+              "hint": "Revisa si el vehículo cumple con la totalidad de los requisitos biológicos fundamentales.",
+              "analogy": "Un robot puede imitar acciones humanas, pero sus piezas mecánicas no son células biológicas vivas.",
+              "options": [
+                "No, porque carece de estructura celular, no realiza metabolismo biológico ni se reproduce",
+                "Sí, porque cualquier objeto que utilice energía y se mueva solo es un ser vivo",
+                "Sí, porque sus sensores electrónicos equivalen exactamente a los ojos de un animal",
+                "No, porque los seres vivos únicamente habitan en la naturaleza y no en la ciudad"
+              ],
+              "correctAnswer": "No, porque carece de estructura celular, no realiza metabolismo biológico ni se reproduce",
+              "distractorInsights": {
+                "Sí, porque cualquier objeto que utilice energía y se mueva solo es un ser vivo": "Equipara el movimiento mecánico y el uso de energía eléctrica con las funciones vitales biológicas.",
+                "Sí, porque sus sensores electrónicos equivalen exactamente a los ojos de un animal": "Confunde dispositivos tecnológicos sintéticos con órganos biológicos formados por tejidos.",
+                "No, porque los seres vivos únicamente habitan en la naturaleza y no en la ciudad": "Aplica un criterio erróneo basado en la ubicación geográfica en lugar de criterios biológicos."
+              }
+            }
           }
         }
       ]
@@ -77,33 +383,186 @@
       "title": "La célula: unidad básica de la vida",
       "activities": [
         {
-          "id": "vida_005",
+          "id": "vida_007",
           "themeId": "la_celula_unidad_basica_de_la_vida",
           "type": "drag_drop",
           "requiresJustification": false,
           "levels": {
-            "1": { "question": "Ubica cada parte de una célula vegetal en la zona correcta del dibujo.", "options": [{ "id": "membrana", "label": "Membrana celular", "zone": "Borde que protege la célula" }, { "id": "nucleo", "label": "Núcleo", "zone": "Centro que dirige la célula" }, { "id": "cloroplasto", "label": "Cloroplasto", "zone": "Parte verde que ayuda a fabricar alimento" }], "correctAnswer": { "membrana": "Borde que protege la célula", "nucleo": "Centro que dirige la célula", "cloroplasto": "Parte verde que ayuda a fabricar alimento" } },
-            "2": { "question": "Lleva cada nombre a su lugar en una célula vegetal.", "options": [{ "id": "nucleo", "label": "Núcleo", "zone": "Centro" }, { "id": "membrana", "label": "Membrana", "zone": "Borde" }], "correctAnswer": { "nucleo": "Centro", "membrana": "Borde" } },
-            "3": { "question": "Coloca el núcleo en la parte central de la célula.", "hint": "El núcleo suele estar dentro de la célula.", "analogy": "El núcleo dirige la célula como un centro de control.", "options": [{ "id": "nucleo", "label": "Núcleo", "zone": "Centro de la célula" }], "correctAnswer": { "nucleo": "Centro de la célula" } }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Durante la clase de biología en Piura, los estudiantes relacionan las partes principales de una célula con la función biológica que desempeña cada una. Arrastra cada estructura celular a la zona con su función correspondiente.",
+              "options": [
+                { "id": "nucleo", "label": "Núcleo celular", "zone": "Dirige el funcionamiento general de la célula y contiene el material genético" },
+                { "id": "membrana", "label": "Membrana plasmática", "zone": "Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula" },
+                { "id": "citoplasma", "label": "Citoplasma", "zone": "Sustancia gelatinosa interna donde se ubican los organelos celulares" }
+              ],
+              "correctAnswer": {
+                "nucleo": "Dirige el funcionamiento general de la célula y contiene el material genético",
+                "membrana": "Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula",
+                "citoplasma": "Sustancia gelatinosa interna donde se ubican los organelos celulares"
+              },
+              "distractorInsights": {
+                "nucleo en Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula": "Confunde el centro de control genético con la barrera de transporte selectivo.",
+                "membrana en Dirige el funcionamiento general de la célula y contiene el material genético": "Asume erróneamente que la cubierta protectora externa controla las instrucciones genéticas.",
+                "citoplasma en Dirige el funcionamiento general de la célula y contiene el material genético": "Confunde el fluido contenedor interno con la estructura directora de la célula."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "RECORDATORIO DE FUNCIONES ESTRUCTURALES:\n- Núcleo = centro de instrucciones y control genético.\n- Membrana = frontera que selecciona qué entra y qué sale.\n- Citoplasma = medio acuoso interno con los organelos.\n\nArrastra cada estructura a la función celular correspondiente:",
+              "options": [
+                { "id": "nucleo", "label": "Núcleo celular", "zone": "Dirige el funcionamiento general de la célula y contiene el material genético" },
+                { "id": "membrana", "label": "Membrana plasmática", "zone": "Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula" },
+                { "id": "citoplasma", "label": "Citoplasma", "zone": "Sustancia gelatinosa interna donde se ubican los organelos celulares" }
+              ],
+              "correctAnswer": {
+                "nucleo": "Dirige el funcionamiento general de la célula y contiene el material genético",
+                "membrana": "Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula",
+                "citoplasma": "Sustancia gelatinosa interna donde se ubican los organelos celulares"
+              },
+              "distractorInsights": {
+                "nucleo en Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula": "Confunde el centro de control genético con la barrera de transporte selectivo.",
+                "membrana en Dirige el funcionamiento general de la célula y contiene el material genético": "Asume erróneamente que la cubierta protectora externa controla las instrucciones genéticas.",
+                "citoplasma en Dirige el funcionamiento general de la célula y contiene el material genético": "Confunde el fluido contenedor interno con la estructura directora de la célula."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: En un colegio, la dirección da las órdenes (como el núcleo), la puerta con el guardián controla quién entra y sale (como la membrana plasmática) y el patio interno contiene las aulas (como el citoplasma).\n\nAplicando este modelo a la célula estudiada en Piura, ubica cada parte celular en la zona de su función:",
+              "hint": "Piensa en qué parte actúa como el cerebro o dirección de la célula.",
+              "analogy": "El núcleo es el cerebro directivo, la membrana es el portero guardián y el citoplasma es el patio interior.",
+              "options": [
+                { "id": "nucleo", "label": "Núcleo celular", "zone": "Dirige el funcionamiento general de la célula y contiene el material genético" },
+                { "id": "membrana", "label": "Membrana plasmática", "zone": "Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula" },
+                { "id": "citoplasma", "label": "Citoplasma", "zone": "Sustancia gelatinosa interna donde se ubican los organelos celulares" }
+              ],
+              "correctAnswer": {
+                "nucleo": "Dirige el funcionamiento general de la célula y contiene el material genético",
+                "membrana": "Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula",
+                "citoplasma": "Sustancia gelatinosa interna donde se ubican los organelos celulares"
+              },
+              "distractorInsights": {
+                "nucleo en Regula el paso de agua, nutrientes y desechos hacia dentro y fuera de la célula": "Confunde el centro de control genético con la barrera de transporte selectivo.",
+                "membrana en Dirige el funcionamiento general de la célula y contiene el material genético": "Asume erróneamente que la cubierta protectora externa controla las instrucciones genéticas.",
+                "citoplasma en Dirige el funcionamiento general de la célula y contiene el material genético": "Confunde el fluido contenedor interno con la estructura directora de la célula."
+              }
+            }
           }
         },
         {
-          "id": "vida_006",
+          "id": "vida_008",
           "themeId": "la_celula_unidad_basica_de_la_vida",
-          "type": "fill_blank",
+          "type": "single_choice",
           "requiresJustification": false,
           "levels": {
-            "1": { "question": "Completa: La ____ es la unidad básica de los seres vivos.", "options": ["célula", "montaña", "semilla", "máquina"], "correctAnswer": "célula" },
-            "2": { "question": "Completa: Todos los seres vivos están formados por ____.", "options": ["células", "ladrillos", "pilas", "gotas de pintura"], "correctAnswer": "células" },
-            "3": { "question": "Completa: Las células son partes pequeñas que forman a los seres vivos, como los ladrillos forman una casa. Una ____ es una parte pequeña de un ser vivo.", "hint": "Es el nombre de la unidad básica de la vida.", "analogy": "Las células se unen como ladrillos para formar una construcción.", "options": ["célula", "rueda", "piedra"], "correctAnswer": "célula" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Un estudiante de Tambogrande analiza bajo el microscopio dos muestras: una del tejido interno de un fruto de mango y otra del epitelio de una lagartija costeña. Observa que las células del mango tienen una pared externa rígida y pequeños gránulos verdes, mientras que las de la lagartija tienen formas flexibles sin gránulos verdes. ¿A qué se debe esta diferencia?",
+              "options": [
+                "La célula de mango es vegetal; posee pared celular para dar soporte y cloroplastos para fotosíntesis",
+                "La célula de lagartija es vegetal; no necesita pared porque la piel del reptil la sustituye",
+                "La célula de mango es animal; posee cloroplastos para capturar insectos pequeños",
+                "Ambas células son idénticas; las estructuras verdes son manchas de polvo sobre el microscopio"
+              ],
+              "correctAnswer": "La célula de mango es vegetal; posee pared celular para dar soporte y cloroplastos para fotosíntesis",
+              "distractorInsights": {
+                "La célula de lagartija es vegetal; no necesita pared porque la piel del reptil la sustituye": "Clasifica erróneamente un tejido animal como vegetal por ignorar su estructura microscópica.",
+                "La célula de mango es animal; posee cloroplastos para capturar insectos pequeños": "Confunde la función fotosintética del cloroplasto vegetal con hábitos carnívoros animales.",
+                "Ambas células son idénticas; las estructuras verdes son manchas de polvo sobre el microscopio": "Atribuye las diferencias morfológicas biológicas a un error o suciedad en el instrumento de medición."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "DATOS DE DIFERENCIACIÓN CELULAR:\n- Célula Vegetal: rígida, con pared celular de celulosa y cloroplastos verdes para fotosíntesis.\n- Célula Animal: membrana flexible, sin pared celular ni cloroplastos.\n\nEn la muestra de Tambogrande, ¿a qué se debe la diferencia entre las células del mango y las de la lagartija?",
+              "options": [
+                "La célula de mango es vegetal; posee pared celular para dar soporte y cloroplastos para fotosíntesis",
+                "La célula de lagartija es vegetal; no necesita pared porque la piel del reptil la sustituye",
+                "La célula de mango es animal; posee cloroplastos para capturar insectos pequeños",
+                "Ambas células son idénticas; las estructuras verdes son manchas de polvo sobre el microscopio"
+              ],
+              "correctAnswer": "La célula de mango es vegetal; posee pared celular para dar soporte y cloroplastos para fotosíntesis",
+              "distractorInsights": {
+                "La célula de lagartija es vegetal; no necesita pared porque la piel del reptil la sustituye": "Clasifica erróneamente un tejido animal como vegetal por ignorar su estructura microscópica.",
+                "La célula de mango es animal; posee cloroplastos para capturar insectos pequeños": "Confunde la función fotosintética del cloroplasto vegetal con hábitos carnívoros animales.",
+                "Ambas células son idénticas; las estructuras verdes son manchas de polvo sobre el microscopio": "Atribuye las diferencias morfológicas biológicas a un error o suciedad en el instrumento de medición."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Las hojas de la cebolla (planta) se sostienen firmes gracias a la pared celular de sus células. En cambio, las células de una gota de sangre de cuy (animal) son redondas y flexibles porque solo tienen membrana plasmática sin pared rígida.\n\nAplicando esta comparación a la muestra de Tambogrande: ¿A qué se debe la diferencia entre la célula de mango y la de lagartija?",
+              "hint": "Recuerda qué tipo de célula fabrica su propio alimento utilizando organelos verdes.",
+              "analogy": "La pared celular funciona como una armadura vegetal de madera, mientras que la célula animal es como un globo flexible.",
+              "options": [
+                "La célula de mango es vegetal; posee pared celular para dar soporte y cloroplastos para fotosíntesis",
+                "La célula de lagartija es vegetal; no necesita pared porque la piel del reptil la sustituye",
+                "La célula de mango es animal; posee cloroplastos para capturar insectos pequeños",
+                "Ambas células son idénticas; las estructuras verdes son manchas de polvo sobre el microscopio"
+              ],
+              "correctAnswer": "La célula de mango es vegetal; posee pared celular para dar soporte y cloroplastos para fotosíntesis",
+              "distractorInsights": {
+                "La célula de lagartija es vegetal; no necesita pared porque la piel del reptil la sustituye": "Clasifica erróneamente un tejido animal como vegetal por ignorar su estructura microscópica.",
+                "La célula de mango es animal; posee cloroplastos para capturar insectos pequeños": "Confunde la función fotosintética del cloroplasto vegetal con hábitos carnívoros animales.",
+                "Ambas células son idénticas; las estructuras verdes son manchas de polvo sobre el microscopio": "Atribuye las diferencias morfológicas biológicas a un error o suciedad en el instrumento de medición."
+              }
+            }
           }
         },
         {
-          "id": "vida_017", "themeId": "la_celula_unidad_basica_de_la_vida", "type": "single_choice", "requiresJustification": true,
+          "id": "vida_009",
+          "themeId": "la_celula_unidad_basica_de_la_vida",
+          "type": "fill_blank",
+          "requiresJustification": true,
           "levels": {
-            "1": { "question": "¿Qué parte de la célula dirige muchas de sus actividades?", "options": ["El núcleo", "La arena", "La raíz", "El ala"], "correctAnswer": "El núcleo" },
-            "2": { "question": "¿Cómo se llama el centro que ayuda a dirigir la célula?", "options": ["Núcleo", "Hoja", "Piedra", "Pata"], "correctAnswer": "Núcleo" },
-            "3": { "question": "Elige el centro de control de la célula.", "hint": "Está dentro de la célula.", "analogy": "El núcleo organiza la célula como una persona organiza una tarea.", "options": ["Núcleo", "Roca", "Pluma"], "correctAnswer": "Núcleo" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Un agricultor de Morropón nota que las hojas de sus limoneros se marchitan. La maestra explica que las hojas son órganos formados por la agrupación de células vegetales especializadas que trabajan juntas. Completa la cadena de niveles de organización biológica en el limonero: Célula vegetal → ____ → Órgano (Hoja) → Sistema → Organismo completo.",
+              "options": [
+                "Tejido vegetal",
+                "Ecosistema costero",
+                "Átomo inorgánico",
+                "Fruto cosechado"
+              ],
+              "correctAnswer": "Tejido vegetal",
+              "distractorInsights": {
+                "Ecosistema costero": "Confunde un nivel de organización ecológico macroscópico con el nivel celular/tisular de un individuo.",
+                "Átomo inorgánico": "Confunde el nivel de organización químico abiótico con la escala biológica intermedia entre célula y órgano.",
+                "Fruto cosechado": "Menciona otro órgano de la planta en lugar de nombrar la agrupación organizada de células (tejido)."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "ESQUEMA DE JERARQUÍA BIOLÓGICA:\nCélula (unidad básica) → AGROPACIÓN DE CÉLULAS DE LA MISMA FUNCIÓN → Órgano (ej. hoja) → Sistema → Organismo.\n\nCompleta la secuencia correcta del limonero de Morropón: Célula vegetal → ____ → Órgano (Hoja) → Sistema → Organismo completo.",
+              "options": [
+                "Tejido vegetal",
+                "Ecosistema costero",
+                "Átomo inorgánico",
+                "Fruto cosechado"
+              ],
+              "correctAnswer": "Tejido vegetal",
+              "distractorInsights": {
+                "Ecosistema costero": "Confunde un nivel de organización ecológico macroscópico con el nivel celular/tisular de un individuo.",
+                "Átomo inorgánico": "Confunde el nivel de organización químico abiótico con la escala biológica intermedia entre célula y órgano.",
+                "Fruto cosechado": "Menciona otro órgano de la planta en lugar de nombrar la agrupación organizada de células (tejido)."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: En el cuerpo humano, las células musculares se unen formando el tejido muscular; varios tejidos forman el estómago (órgano) y este integra el sistema digestivo del cuerpo humano.\n\nAplicando la misma jerarquía al limonero de Morropón: Célula vegetal → ____ → Órgano (Hoja) → Sistema → Organismo completo.",
+              "hint": "Piensa cómo se llama el nivel biológico formado por la unión de células similares que cumplen una misma tarea.",
+              "analogy": "Las células son como ladrillos individuales y el tejido es como la pared armada con esos ladrillos.",
+              "options": [
+                "Tejido vegetal",
+                "Ecosistema costero",
+                "Átomo inorgánico",
+                "Fruto cosechado"
+              ],
+              "correctAnswer": "Tejido vegetal",
+              "distractorInsights": {
+                "Ecosistema costero": "Confunde un nivel de organización ecológico macroscópico con el nivel celular/tisular de un individuo.",
+                "Átomo inorgánico": "Confunde el nivel de organización químico abiótico con la escala biológica intermedia entre célula y órgano.",
+                "Fruto cosechado": "Menciona otro órgano de la planta en lugar de nombrar la agrupación organizada de células (tejido)."
+              }
+            }
           }
         }
       ]
@@ -113,33 +572,195 @@
       "title": "Características y funciones vitales",
       "activities": [
         {
-          "id": "vida_007",
+          "id": "vida_010",
           "themeId": "caracteristicas_y_funciones_vitales",
-          "type": "single_choice",
-          "requiresJustification": true,
-          "levels": {
-            "1": { "question": "Una iguana toma agua y come hojas. ¿Qué función vital realiza principalmente?", "options": ["Nutrición", "Reproducción", "Fabricación", "Evaporación"], "correctAnswer": "Nutrición" },
-            "2": { "question": "Cuando un animal come y toma agua, realiza la función de…", "options": ["nutrición", "reproducción", "jugar", "construir"], "correctAnswer": "nutrición" },
-            "3": { "question": "Comer ayuda a conseguir energía. ¿Cómo se llama esta función vital?", "hint": "Relaciona la función con alimentarse.", "analogy": "Como cuando recargas energía con el desayuno.", "options": ["Nutrición", "Reproducción", "Ser piedra"], "correctAnswer": "Nutrición" }
-          }
-        },
-        {
-          "id": "vida_008",
-          "themeId": "caracteristicas_y_funciones_vitales",
-          "type": "multiple_choice",
+          "type": "group_sort",
           "requiresJustification": false,
           "levels": {
-            "1": { "question": "Selecciona las acciones que corresponden a la función de relación de un perro.", "options": ["Corre al escuchar un silbato", "Se esconde al oír un trueno", "Come su alimento", "Tiene crías"], "correctAnswer": ["Corre al escuchar un silbato", "Se esconde al oír un trueno"] },
-            "2": { "question": "Marca las acciones en que un perro responde a algo que pasa a su alrededor.", "options": ["Corre al escuchar un sonido", "Se aleja de un ruido fuerte", "Duerme en una cama", "Nace"], "correctAnswer": ["Corre al escuchar un sonido", "Se aleja de un ruido fuerte"] },
-            "3": { "question": "Marca lo que hace un perro al notar algo afuera.", "hint": "La relación es responder a lo que vemos, oímos o sentimos.", "analogy": "Como cuando apartas la mano de algo caliente.", "options": ["Corre al oír un ruido", "Es una roca", "No responde a nada"], "correctAnswer": ["Corre al oír un ruido"] }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En el Parque Nacional Cerros de Amotape conviven distintas especies: algarrobos, iguanas verdes, pavas aliblancas y cactus espinosos. Clasifica a cada organismo según el tipo de nutrición mediante la cual obtienen materia y energía.",
+              "options": [
+                { "id": "algarrobo", "label": "Algarrobo", "group": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)" },
+                { "id": "cactus", "label": "Cactus espinoso", "group": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)" },
+                { "id": "iguana", "label": "Iguana verde", "group": "Nutrición Heterótrofa (consume a otros seres vivos)" },
+                { "id": "pava", "label": "Pava aliblanca", "group": "Nutrición Heterótrofa (consume a otros seres vivos)" }
+              ],
+              "correctAnswer": {
+                "algarrobo": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)",
+                "cactus": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)",
+                "iguana": "Nutrición Heterótrofa (consume a otros seres vivos)",
+                "pava": "Nutrición Heterótrofa (consume a otros seres vivos)"
+              },
+              "distractorInsights": {
+                "algarrobo en Nutrición Heterótrofa (consume a otros seres vivos)": "Cree que las plantas absorben su alimento ya elaborado directamente del suelo sin fotosíntesis.",
+                "iguana en Nutrición Autótrofa (fabrica su alimento por fotosíntesis)": "Confunde la toma de sol para regular la temperatura corporal del reptil con la producción fotosintética de alimento."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "GUÍA DE CLASIFICACIÓN DE NUTRICIÓN:\n- Autótrofa: organismos que producen glucosa usando luz solar, agua y dióxido de carbono (plantas).\n- Heterótrofa: organismos que se alimentan consumiendo plantas u otros animales (animales).\n\nClasifica a las especies de Cerros de Amotape según su nutrición:",
+              "options": [
+                { "id": "algarrobo", "label": "Algarrobo", "group": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)" },
+                { "id": "cactus", "label": "Cactus espinoso", "group": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)" },
+                { "id": "iguana", "label": "Iguana verde", "group": "Nutrición Heterótrofa (consume a otros seres vivos)" },
+                { "id": "pava", "label": "Pava aliblanca", "group": "Nutrición Heterótrofa (consume a otros seres vivos)" }
+              ],
+              "correctAnswer": {
+                "algarrobo": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)",
+                "cactus": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)",
+                "iguana": "Nutrición Heterótrofa (consume a otros seres vivos)",
+                "pava": "Nutrición Heterótrofa (consume a otros seres vivos)"
+              },
+              "distractorInsights": {
+                "algarrobo en Nutrición Heterótrofa (consume a otros seres vivos)": "Cree que las plantas absorben su alimento ya elaborado directamente del suelo sin fotosíntesis.",
+                "iguana en Nutrición Autótrofa (fabrica su alimento por fotosíntesis)": "Confunde la toma de sol para regular la temperatura corporal del reptil con la producción fotosintética de alimento."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un árbol de mango capta luz solar para fabricar su azúcar (autótrofo), mientras que un zorro costeño debe cazar lagartijas para obtener su energía (heterótrofo).\n\nAplicando este criterio biológico a las especies de Cerros de Amotape, clasifica cada organismo según su tipo de nutrición:",
+              "hint": "Diferencia las plantas que hacen fotosíntesis de los animales que consumen materia orgánica.",
+              "analogy": "Las plantas son como cocinas solares que producen su plato; los animales son comensales que necesitan buscar su comida.",
+              "options": [
+                { "id": "algarrobo", "label": "Algarrobo", "group": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)" },
+                { "id": "cactus", "label": "Cactus espinoso", "group": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)" },
+                { "id": "iguana", "label": "Iguana verde", "group": "Nutrición Heterótrofa (consume a otros seres vivos)" },
+                { "id": "pava", "label": "Pava aliblanca", "group": "Nutrición Heterótrofa (consume a otros seres vivos)" }
+              ],
+              "correctAnswer": {
+                "algarrobo": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)",
+                "cactus": "Nutrición Autótrofa (fabrica su alimento por fotosíntesis)",
+                "iguana": "Nutrición Heterótrofa (consume a otros seres vivos)",
+                "pava": "Nutrición Heterótrofa (consume a otros seres vivos)"
+              },
+              "distractorInsights": {
+                "algarrobo en Nutrición Heterótrofa (consume a otros seres vivos)": "Cree que las plantas absorben su alimento ya elaborado directamente del suelo sin fotosíntesis.",
+                "iguana en Nutrición Autótrofa (fabrica su alimento por fotosíntesis)": "Confunde la toma de sol para regular la temperatura corporal del reptil con la producción fotosintética de alimento."
+              }
+            }
           }
         },
         {
-          "id": "vida_018", "themeId": "caracteristicas_y_funciones_vitales", "type": "fill_blank", "requiresJustification": false,
+          "id": "vida_011",
+          "themeId": "caracteristicas_y_funciones_vitales",
+          "type": "single_choice",
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "Completa: Cuando una gallina pone huevos, realiza la función de ____.", "options": ["reproducción", "nutrición", "fabricación", "evaporación"], "correctAnswer": "reproducción" },
-            "2": { "question": "Completa: Tener crías es una forma de ____.", "options": ["reproducción", "dormir", "jugar", "pintar"], "correctAnswer": "reproducción" },
-            "3": { "question": "Completa: Las crías permiten que haya nuevos seres vivos. Esto se llama ____.", "hint": "Piensa en tener hijos o crías.", "analogy": "Una gallina y sus pollitos son un ejemplo.", "options": ["reproducción", "ser roca", "ser mesa"], "correctAnswer": "reproducción" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En un biohuerto escolar de Ayabaca, los niños notan que los tallos de las plantas de frejol se curvan hacia la ventana por donde ingresa la luz solar (fototropismo), mientras que sus raíces se dirigen hacia abajo buscando humedad en la tierra (geotropismo). ¿Qué función vital demuestra la planta con estos movimientos de orientación?",
+              "options": [
+                "La función de relación, pues percibe estímulos ambientales (luz y gravedad) y responde adaptando su crecimiento",
+                "La función de reproducción, ya que al girar hacia la luz produce semillas automáticamente en el tallo",
+                "La función de nutrición heterótrofa, porque sus raíces tragan luz del sol directamente del suelo",
+                "Un proceso de deformación mecánica de la planta provocado únicamente por el calor ambiental"
+              ],
+              "correctAnswer": "La función de relación, pues percibe estímulos ambientales (luz y gravedad) y responde adaptando su crecimiento",
+              "distractorInsights": {
+                "La función de reproducción, ya que al girar hacia la luz produce semillas automáticamente en el tallo": "Confunde la respuesta de orientación celular (tropismo) con la generación de órganos reproductivos.",
+                "La función de nutrición heterótrofa, porque sus raíces tragan luz del sol directamente del suelo": "Afirma erróneamente que las raíces capturan energía lumínica bajo tierra de forma heterótrofa.",
+                "Un proceso de deformación mecánica de la planta provocado únicamente por el calor ambiental": "Atribuye el respuesta biológica vegetal a una simple deformación por calor inerte."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CHECKLIST BIOLÓGICO:\n- Estímulo: luz solar y gravedad terrestre.\n- Respuesta vegetal: crecimiento orientado del tallo y raíz.\n- Función biológica: captura de estímulos y respuesta del organismo.\n\nEn el biohuerto de Ayabaca, ¿qué función vital demuestra la planta de frejol al orientar sus tallos y raíces?",
+              "options": [
+                "La función de relación, pues percibe estímulos ambientales (luz y gravedad) y responde adaptando su crecimiento",
+                "La función de reproducción, ya que al girar hacia la luz produce semillas automáticamente en el tallo",
+                "La función de nutrición heterótrofa, porque sus raíces tragan luz del sol directamente del suelo",
+                "Un proceso de deformación mecánica de la planta provocado únicamente por el calor ambiental"
+              ],
+              "correctAnswer": "La función de relación, pues percibe estímulos ambientales (luz y gravedad) y responde adaptando su crecimiento",
+              "distractorInsights": {
+                "La función de reproducción, ya que al girar hacia la luz produce semillas automáticamente en el tallo": "Confunde la respuesta de orientación celular (tropismo) con la generación de órganos reproductivos.",
+                "La función de nutrición heterótrofa, porque sus raíces tragan luz del sol directamente del suelo": "Afirma erróneamente que las raíces capturan energía lumínica bajo tierra de forma heterótrofa.",
+                "Un proceso de deformación mecánica de la planta provocado únicamente por el calor ambiental": "Atribuye el respuesta biológica vegetal a una simple deformación por calor inerte."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un girasol en el campo sigue la ruta del sol durante el día girando su flor. Este movimiento en respuesta a un estímulo externo forma parte de la función de relación de los seres vivos.\n\nAplicando esta lógica a las plantas de frejol en Ayabaca que orientan sus tallos a la ventana y sus raíces al suelo: ¿Qué función vital están realizando?",
+              "hint": "Selecciona la función mediante la cual un organismo capta información de su entorno y reacciona.",
+              "analogy": "Las plantas no tienen ojos ni patas, pero perciben la luz y responden creciendo hacia ella igual que tú te giras hacia un sonido.",
+              "options": [
+                "La función de relación, pues percibe estímulos ambientales (luz y gravedad) y responde adaptando su crecimiento",
+                "La función de reproducción, ya que al girar hacia la luz produce semillas automáticamente en el tallo",
+                "La función de nutrición heterótrofa, porque sus raíces tragan luz del sol directamente del suelo",
+                "Un proceso de deformación mecánica de la planta provocado únicamente por el calor ambiental"
+              ],
+              "correctAnswer": "La función de relación, pues percibe estímulos ambientales (luz y gravedad) y responde adaptando su crecimiento",
+              "distractorInsights": {
+                "La función de reproducción, ya que al girar hacia la luz produce semillas automáticamente en el tallo": "Confunde la respuesta de orientación celular (tropismo) con la generación de órganos reproductivos.",
+                "La función de nutrición heterótrofa, porque sus raíces tragan luz del sol directamente del suelo": "Afirma erróneamente que las raíces capturan energía lumínica bajo tierra de forma heterótrofa.",
+                "Un proceso de deformación mecánica de la planta provocado únicamente por el calor ambiental": "Atribuye el respuesta biológica vegetal a una simple deformación por calor inerte."
+              }
+            }
+          }
+        },
+        {
+          "id": "vida_012",
+          "themeId": "caracteristicas_y_funciones_vitales",
+          "type": "multiple_choice",
+          "requiresJustification": true,
+          "levels": {
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Durante la temporada de lluvias en el bosque seco de Sechura, las pavas aliblancas construyen nidos en las copas altas de los algarrobos y ponen huevos para empollar a sus crías. Selecciona TODAS las afirmaciones correctas sobre el papel biológico de la función de reproducción.",
+              "options": [
+                "Asegura la continuidad de la especie transmitiendo información genética a nuevos individuos",
+                "Permite la supervivencia de la población en el tiempo sustituyendo a los miembros viejos",
+                "Sirve como método único para que las aves adultas digieran las semillas de algarrobo",
+                "Sustituye por completo a la función de respiración para evitar el uso de oxígeno"
+              ],
+              "correctAnswer": [
+                "Asegura la continuidad de la especie transmitiendo información genética a nuevos individuos",
+                "Permite la supervivencia de la población en el tiempo sustituyendo a los miembros viejos"
+              ],
+              "distractorInsights": {
+                "Sirve como método único para que las aves adultas digieran las semillas de algarrobo": "Confunde el proceso reproductivo de la especie con el proceso digestivo individual.",
+                "Sustituye por completo a la función de respiración para evitar el uso de oxígeno": "Asume falsamente que una función vital puede eliminar la necesidad biológica del intercambio gaseoso."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "DATO IMPORTANTE:\nLa reproducción no busca mantener vivo a un individuo en el día a día (como la nutrición), sino perpetuar la especie y trascender la vida celular en las siguientes generaciones.\n\nEn Sechura, selecciona TODAS las afirmaciones científicamente correctas sobre la reproducción de las pavas aliblancas:",
+              "options": [
+                "Asegura la continuidad de la especie transmitiendo información genética a nuevos individuos",
+                "Permite la supervivencia de la población en el tiempo sustituyendo a los miembros viejos",
+                "Sirve como método único para que las aves adultas digieran las semillas de algarrobo",
+                "Sustituye por completo a la función de respiración para evitar el uso de oxígeno"
+              ],
+              "correctAnswer": [
+                "Asegura la continuidad de la especie transmitiendo información genética a nuevos individuos",
+                "Permite la supervivencia de la población en el tiempo sustituyendo a los miembros viejos"
+              ],
+              "distractorInsights": {
+                "Sirve como método único para que las aves adultas digieran las semillas de algarrobo": "Confunde el proceso reproductivo de la especie con el proceso digestivo individual.",
+                "Sustituye por completo a la función de respiración para evitar el uso de oxígeno": "Asume falsamente que una función vital puede eliminar la necesidad biológica del intercambio gaseoso."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un grupo de iguanas que no logra reproducirse se extinguirá al morir el último adulto de la manada. Al reproducirse, nacen iguanas jóvenes que mantienen viva a la especie a lo largo de los años.\n\nAplicando esta lógica a las pavas aliblancas de Sechura, selecciona TODAS las opciones que explican el propósito de la reproducción:",
+              "hint": "Marca únicamente las razones que benefician a la especie y aseguran su permanencia en el ecosistema.",
+              "analogy": "La reproducción es como pasar el testimonio en una carrera de relevos: garantiza que la vida continúe tras las generaciones pasadas.",
+              "options": [
+                "Asegura la continuidad de la especie transmitiendo información genética a nuevos individuos",
+                "Permite la supervivencia de la población en el tiempo sustituyendo a los miembros viejos",
+                "Sirve como método único para que las aves adultas digieran las semillas de algarrobo",
+                "Sustituye por completo a la función de respiración para evitar el uso de oxígeno"
+              ],
+              "correctAnswer": [
+                "Asegura la continuidad de la especie transmitiendo información genética a nuevos individuos",
+                "Permite la supervivencia de la población en el tiempo sustituyendo a los miembros viejos"
+              ],
+              "distractorInsights": {
+                "Sirve como método único para que las aves adultas digieran las semillas de algarrobo": "Confunde el proceso reproductivo de la especie con el proceso digestivo individual.",
+                "Sustituye por completo a la función de respiración para evitar el uso de oxígeno": "Asume falsamente que una función vital puede eliminar la necesidad biológica del intercambio gaseoso."
+              }
+            }
           }
         }
       ]
@@ -149,33 +770,189 @@
       "title": "Los seres vivos y su ambiente",
       "activities": [
         {
-          "id": "vida_009",
-          "themeId": "los_seres_vivos_y_su_ambiente",
-          "type": "group_sort",
-          "requiresJustification": false,
-          "levels": {
-            "1": { "question": "Clasifica cada elemento del bosque seco de Piura como biótico o abiótico.", "options": [{ "id": "algarrobo", "label": "Algarrobo", "group": "biótico" }, { "id": "zorro", "label": "Zorro costeño", "group": "biótico" }, { "id": "sol", "label": "Luz del sol", "group": "abiótico" }, { "id": "suelo", "label": "Suelo", "group": "abiótico" }], "correctAnswer": { "algarrobo": "biótico", "zorro": "biótico", "sol": "abiótico", "suelo": "abiótico" } },
-            "2": { "question": "Separa los seres vivos de los elementos sin vida del ambiente.", "options": [{ "id": "planta", "label": "Planta", "group": "ser vivo" }, { "id": "lagartija", "label": "Lagartija", "group": "ser vivo" }, { "id": "agua", "label": "Agua", "group": "sin vida" }, { "id": "aire", "label": "Aire", "group": "sin vida" }], "correctAnswer": { "planta": "ser vivo", "lagartija": "ser vivo", "agua": "sin vida", "aire": "sin vida" } },
-            "3": { "question": "Separa lo vivo de lo que no tiene vida en un ambiente.", "hint": "Una planta tiene vida; el agua no.", "analogy": "El agua ayuda a los seres vivos, pero no es un ser vivo.", "options": [{ "id": "flor", "label": "Flor", "group": "vivo" }, { "id": "agua", "label": "Agua", "group": "no vivo" }], "correctAnswer": { "flor": "vivo", "agua": "no vivo" } }
-          }
-        },
-        {
-          "id": "vida_010",
+          "id": "vida_013",
           "themeId": "los_seres_vivos_y_su_ambiente",
           "type": "drag_drop",
-          "requiresJustification": true,
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "Lleva cada ser vivo al ambiente de Piura donde puede encontrar lo que necesita.", "options": [{ "id": "pez", "label": "Pez", "zone": "Agua del río" }, { "id": "algarrobo", "label": "Algarrobo", "zone": "Suelo del bosque seco" }, { "id": "gaviota", "label": "Gaviota", "zone": "Costa" }], "correctAnswer": { "pez": "Agua del río", "algarrobo": "Suelo del bosque seco", "gaviota": "Costa" } },
-            "2": { "question": "Une cada ser vivo con su ambiente.", "options": [{ "id": "pez", "label": "Pez", "zone": "Agua" }, { "id": "cactus", "label": "Cactus", "zone": "Suelo seco" }], "correctAnswer": { "pez": "Agua", "cactus": "Suelo seco" } },
-            "3": { "question": "Lleva el pez al lugar donde vive.", "hint": "Los peces necesitan agua.", "analogy": "El agua es el hogar de un pez como tu casa es tu hogar.", "options": [{ "id": "pez", "label": "Pez", "zone": "Agua" }], "correctAnswer": { "pez": "Agua" } }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En el ecosistema de los Manglares de San Pedro de Vice conviven flamencos, cangrejos carreteros, el agua salobre del estuario y la arena de las dunas. Clasifica cada componente arrastrándolo a su categoría en el ecosistema.",
+              "options": [
+                { "id": "flamenco", "label": "Flamenco de la laguna", "zone": "Factor Biótico (ser vivo)" },
+                { "id": "cangrejo", "label": "Cangrejo carretero", "zone": "Factor Biótico (ser vivo)" },
+                { "id": "agua", "label": "Agua salobre del estuario", "zone": "Factor Abiótico (medio físico inerte)" },
+                { "id": "arena", "label": "Arena de la duna", "zone": "Factor Abiótico (medio físico inerte)" }
+              ],
+              "correctAnswer": {
+                "flamenco": "Factor Biótico (ser vivo)",
+                "cangrejo": "Factor Biótico (ser vivo)",
+                "agua": "Factor Abiótico (medio físico inerte)",
+                "arena": "Factor Abiótico (medio físico inerte)"
+              },
+              "distractorInsights": {
+                "agua en Factor Biótico (ser vivo)": "Confunde el recurso hídrico fundamental con un organismo biológico con vida propia.",
+                "arena en Factor Biótico (ser vivo)": "Cree que el suelo o sustrato donde caminan los animales es en sí mismo un ser vivo."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "RESUMEN ECOLÓGICO:\n- Factores Bióticos: todos los organismos con vida (animales, plantas, bacterias).\n- Factores Abióticos: componentes físicos y químicos del ambiente sin vida (agua, tierra, luz, aire).\n\nClasifica los componentes de San Pedro de Vice:",
+              "options": [
+                { "id": "flamenco", "label": "Flamenco de la laguna", "zone": "Factor Biótico (ser vivo)" },
+                { "id": "cangrejo", "label": "Cangrejo carretero", "zone": "Factor Biótico (ser vivo)" },
+                { "id": "agua", "label": "Agua salobre del estuario", "zone": "Factor Abiótico (medio físico inerte)" },
+                { "id": "arena", "label": "Arena de la duna", "zone": "Factor Abiótico (medio físico inerte)" }
+              ],
+              "correctAnswer": {
+                "flamenco": "Factor Biótico (ser vivo)",
+                "cangrejo": "Factor Biótico (ser vivo)",
+                "agua": "Factor Abiótico (medio físico inerte)",
+                "arena": "Factor Abiótico (medio físico inerte)"
+              },
+              "distractorInsights": {
+                "agua en Factor Biótico (ser vivo)": "Confunde el recurso hídrico fundamental con un organismo biológico con vida propia.",
+                "arena en Factor Biótico (ser vivo)": "Cree que el suelo o sustrato donde caminan los animales es en sí mismo un ser vivo."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: En el mar de Paita, los peces y las algas son componentes bióticos (vivos), mientras que las olas de agua salada y la luz del sol son componentes abióticos (sin vida).\n\nAplicando esta distinción al ecosistema de San Pedro de Vice, arrastra cada elemento a su categoría adecuada:",
+              "hint": "Identifica cuáles elementos corresponden a organismos vivientes y cuáles al medio físico que los rodea.",
+              "analogy": "Los factores bióticos son los habitantes vivientes del acuario y los abióticos son el agua y el vidrio que los contienen.",
+              "options": [
+                { "id": "flamenco", "label": "Flamenco de la laguna", "zone": "Factor Biótico (ser vivo)" },
+                { "id": "cangrejo", "label": "Cangrejo carretero", "zone": "Factor Biótico (ser vivo)" },
+                { "id": "agua", "label": "Agua salobre del estuario", "zone": "Factor Abiótico (medio físico inerte)" },
+                { "id": "arena", "label": "Arena de la duna", "zone": "Factor Abiótico (medio físico inerte)" }
+              ],
+              "correctAnswer": {
+                "flamenco": "Factor Biótico (ser vivo)",
+                "cangrejo": "Factor Biótico (ser vivo)",
+                "agua": "Factor Abiótico (medio físico inerte)",
+                "arena": "Factor Abiótico (medio físico inerte)"
+              },
+              "distractorInsights": {
+                "agua en Factor Biótico (ser vivo)": "Confunde el recurso hídrico fundamental con un organismo biológico con vida propia.",
+                "arena en Factor Biótico (ser vivo)": "Cree que el suelo o sustrato donde caminan los animales es en sí mismo un ser vivo."
+              }
+            }
           }
         },
         {
-          "id": "vida_019", "themeId": "los_seres_vivos_y_su_ambiente", "type": "multiple_choice", "requiresJustification": false,
+          "id": "vida_014",
+          "themeId": "los_seres_vivos_y_su_ambiente",
+          "type": "single_choice",
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "Marca lo que necesita un algarrobo del bosque seco para vivir.", "options": ["Agua", "Luz solar", "Suelo", "Una computadora"], "correctAnswer": ["Agua", "Luz solar", "Suelo"] },
-            "2": { "question": "Marca lo que una planta necesita para vivir.", "options": ["Agua", "Luz", "Suelo", "Televisor"], "correctAnswer": ["Agua", "Luz", "Suelo"] },
-            "3": { "question": "Marca algo que necesita una planta.", "hint": "Las plantas necesitan agua.", "analogy": "El agua ayuda a una planta como el agua te ayuda a ti.", "options": ["Agua", "Juguete", "Reloj"], "correctAnswer": ["Agua"] }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "El algarrobo del bosque seco de Piura posee raíces profundas de hasta 50 metros que alcanzan la napa freática subterránea y hojas muy pequeñas recubiertas de una fina cera. ¿Qué ventaja de adaptación al clima árido costeño le otorgan estas características morfológicas?",
+              "options": [
+                "Captar agua subterránea profunda y reducir la pérdida de agua por evapotranspiración ante el calor intenso",
+                "Absorber aire caliente del desierto para calentar la madera del tronco durante las noches de invierno",
+                "Evitar que las aves construyan nidos en sus copas mediante la vibración de las raíces bajo tierra",
+                "Aumentar el peso total del árbol para que el viento del mar no arrastre el tronco hacia el océano"
+              ],
+              "correctAnswer": "Captar agua subterránea profunda y reducir la pérdida de agua por evapotranspiración ante el calor intenso",
+              "distractorInsights": {
+                "Absorber aire caliente del desierto para calentar la madera del tronco durante las noches de invierno": "Atribuye la anatomía vegetal a un mecanismo de calefacción interna por aire desértico.",
+                "Evitar que las aves construyan nidos en sus copas mediante la vibración de las raíces bajo tierra": "Relaciona erróneamente las raíces profundas con conductas de rechazo a aves nidificantes.",
+                "Aumentar el peso total del árbol para que el viento del mar no arrastre el tronco hacia el océano": "Explica la profundidad radicular como anclaje contra vientos marinos en lugar de absorción hídrica."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "ANÁLISIS DE ADAPTACIÓN EN EL BOSQUE SECO:\n- Problema ambiental: escasez de lluvia en la superficie y radiación solar extrema.\n- Solución biológica del algarrobo: raíces súper profundas (buscan agua subterránea) + hojas diminutas con cera (evitan la pérdida de vapor de agua).\n\n¿Qué ventaja le otorgan estas estructuras al algarrobo de Piura?",
+              "options": [
+                "Captar agua subterránea profunda y reducir la pérdida de agua por evapotranspiración ante el calor intenso",
+                "Absorber aire caliente del desierto para calentar la madera del tronco durante las noches de invierno",
+                "Evitar que las aves construyan nidos en sus copas mediante la vibración de las raíces bajo tierra",
+                "Aumentar el peso total del árbol para que el viento del mar no arrastre el tronco hacia el océano"
+              ],
+              "correctAnswer": "Captar agua subterránea profunda y reducir la pérdida de agua por evapotranspiración ante el calor intenso",
+              "distractorInsights": {
+                "Absorber aire caliente del desierto para calentar la madera del tronco durante las noches de invierno": "Atribuye la anatomía vegetal a un mecanismo de calefacción interna por aire desértico.",
+                "Evitar que las aves construyan nidos en sus copas mediante la vibración de las raíces bajo tierra": "Relaciona erróneamente las raíces profundas con conductas de rechazo a aves nidificantes.",
+                "Aumentar el peso total del árbol para que el viento del mar no arrastre el tronco hacia el océano": "Explica la profundidad radicular como anclaje contra vientos marinos en lugar de absorción hídrica."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Los cactus del desierto transforman sus hojas en espinas para no perder agua por el sol y acumulan humedad en sus tallos carnosos; así sobreviven donde casi nunca llueve.\n\nAplicando esta lógica de adaptación al clima seco de Piura: ¿Qué ventaja le otorgan las raíces profundas y hojas pequeñas endurecidas al algarrobo?",
+              "hint": "Busca la opción que resuelve la necesidad básica de conseguir agua y evitar secarse por el calor.",
+              "analogy": "Las raíces profundas son como un sorbete largo que llega al fondo de un vaso subterráneo de agua.",
+              "options": [
+                "Captar agua subterránea profunda y reducir la pérdida de agua por evapotranspiración ante el calor intenso",
+                "Absorber aire caliente del desierto para calentar la madera del tronco durante las noches de invierno",
+                "Evitar que las aves construyan nidos en sus copas mediante la vibración de las raíces bajo tierra",
+                "Aumentar el peso total del árbol para que el viento del mar no arrastre el tronco hacia el océano"
+              ],
+              "correctAnswer": "Captar agua subterránea profunda y reducir la pérdida de agua por evapotranspiración ante el calor intenso",
+              "distractorInsights": {
+                "Absorber aire caliente del desierto para calentar la madera del tronco durante las noches de invierno": "Atribuye la anatomía vegetal a un mecanismo de calefacción interna por aire desértico.",
+                "Evitar que las aves construyan nidos en sus copas mediante la vibración de las raíces bajo tierra": "Relaciona erróneamente las raíces profundas con conductas de rechazo a aves nidificantes.",
+                "Aumentar el peso total del árbol para que el viento del mar no arrastre el tronco hacia el océano": "Explica la profundidad radicular como anclaje contra vientos marinos en lugar de absorción hídrica."
+              }
+            }
+          }
+        },
+        {
+          "id": "vida_015",
+          "themeId": "los_seres_vivos_y_su_ambiente",
+          "type": "fill_blank",
+          "requiresJustification": true,
+          "levels": {
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En la cadena trófica del bosque seco de Piura, los algarrobos son productores, los iguanas comen sus brotes y los zorros costeños cazan iguanas. Si una tala ilegal elimina masivamente los algarrobos de la zona, la población de zorros costeños decaerá drásticamente porque ____.",
+              "options": [
+                "se rompe la base de la cadena alimenticia al desaparecer el productor que sostiene a las iguanas",
+                "los zorros se verán obligados a transformarse en plantas fotosintéticas para sobrevivir",
+                "las iguanas comenzarán a cazar zorros costeños al quedarse sin hojas en los árboles",
+                "el clima del bosque seco cambiará a un clima con nieve y hielo en pocos minutos"
+              ],
+              "correctAnswer": "se rompe la base de la cadena alimenticia al desaparecer el productor que sostiene a las iguanas",
+              "distractorInsights": {
+                "los zorros se verán obligados a transformarse en plantas fotosintéticas para sobrevivir": "Asume mutaciones e imposibilidades biológicas instantáneas entre reinos.",
+                "las iguanas comenzarán a cazar zorros costeños al quedarse sin hojas en los árboles": "Invierte arbitrariamente el flujo del nivel trófico (herbívoro pasando a depredador tope).",
+                "el clima del bosque seco cambiará a un clima con nieve y hielo en pocos minutos": "Confunde la alteración trófica de una población con cambios climáticos polares inmediatos."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CADENA TRÓFICA: Algarrobo (Productor) → Iguana (Consumidor primario) → Zorro (Consumidor secundario).\nSin algarrobos, las iguanas no tienen alimento y mueren o emigran; por lo tanto, el zorro se queda sin presas.\n\nLa población de zorros decaerá drásticamente en Piura porque ____.",
+              "options": [
+                "se rompe la base de la cadena alimenticia al desaparecer el productor que sostiene a las iguanas",
+                "los zorros se verán obligados a transformarse en plantas fotosintéticas para sobrevivir",
+                "las iguanas comenzarán a cazar zorros costeños al quedarse sin hojas en los árboles",
+                "el clima del bosque seco cambiará a un clima con nieve y hielo en pocos minutos"
+              ],
+              "correctAnswer": "se rompe la base de la cadena alimenticia al desaparecer el productor que sostiene a las iguanas",
+              "distractorInsights": {
+                "los zorros se verán obligados a transformarse en plantas fotosintéticas para sobrevivir": "Asume mutaciones e imposibilidades biológicas instantáneas entre reinos.",
+                "las iguanas comenzarán a cazar zorros costeños al quedarse sin hojas en los árboles": "Invierte arbitrariamente el flujo del nivel trófico (herbívoro pasando a depredador tope).",
+                "el clima del bosque seco cambiará a un clima con nieve y hielo en pocos minutos": "Confunde la alteración trófica de una población con cambios climáticos polares inmediatos."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: En el mar, si desaparece el fitoplancton (productor), los peces pequeños no comen y mueren, dejando a los lobos marinos (depredadores) sin alimento. La pérdida del productor afecta a toda la cadena.\n\nAplicando este razonamiento a la tala masiva de algarrobos en el bosque seco: La población de zorros decaerá drásticamente porque ____.",
+              "hint": "Piensa en el efecto en cadena que ocurre cuando destruyes el alimento del animal que sirve de presa al zorro.",
+              "analogy": "Si se derrumban los cimientos de un edificio, los pisos superiores también caen aunque no hayan sido tocados directamente.",
+              "options": [
+                "se rompe la base de la cadena alimenticia al desaparecer el productor que sostiene a las iguanas",
+                "los zorros se verán obligados a transformarse en plantas fotosintéticas para sobrevivir",
+                "las iguanas comenzarán a cazar zorros costeños al quedarse sin hojas en los árboles",
+                "el clima del bosque seco cambiará a un clima con nieve y hielo en pocos minutos"
+              ],
+              "correctAnswer": "se rompe la base de la cadena alimenticia al desaparecer el productor que sostiene a las iguanas",
+              "distractorInsights": {
+                "los zorros se verán obligados a transformarse en plantas fotosintéticas para sobrevivir": "Asume mutaciones e imposibilidades biológicas instantáneas entre reinos.",
+                "las iguanas comenzarán a cazar zorros costeños al quedarse sin hojas en los árboles": "Invierte arbitrariamente el flujo del nivel trófico (herbívoro pasando a depredador tope).",
+                "el clima del bosque seco cambiará a un clima con nieve y hielo en pocos minutos": "Confunde la alteración trófica de una población con cambios climáticos polares inmediatos."
+              }
+            }
           }
         }
       ]
@@ -185,33 +962,195 @@
       "title": "Clasificación",
       "activities": [
         {
-          "id": "vida_011",
-          "themeId": "clasificacion",
-          "type": "multiple_choice",
-          "requiresJustification": false,
-          "levels": {
-            "1": { "question": "Selecciona los animales vertebrados.", "options": ["Gallinazo", "Lagartija", "Mariposa", "Lombriz"], "correctAnswer": ["Gallinazo", "Lagartija"] },
-            "2": { "question": "Marca los animales que tienen columna vertebral.", "options": ["Perro", "Pez", "Hormiga", "Caracol"], "correctAnswer": ["Perro", "Pez"] },
-            "3": { "question": "Marca el animal que tiene huesos y columna vertebral.", "hint": "Los perros tienen huesos dentro de su cuerpo.", "analogy": "La columna es una fila de huesos que sostiene el cuerpo.", "options": ["Perro", "Mariposa", "Lombriz"], "correctAnswer": ["Perro"] }
-          }
-        },
-        {
-          "id": "vida_012",
+          "id": "vida_016",
           "themeId": "clasificacion",
           "type": "group_sort",
           "requiresJustification": false,
           "levels": {
-            "1": { "question": "Clasifica estos seres vivos como plantas o animales.", "options": [{ "id": "mango", "label": "Árbol de mango", "group": "planta" }, { "id": "colibri", "label": "Colibrí", "group": "animal" }, { "id": "algarrobo", "label": "Algarrobo", "group": "planta" }, { "id": "iguana", "label": "Iguana", "group": "animal" }], "correctAnswer": { "mango": "planta", "colibri": "animal", "algarrobo": "planta", "iguana": "animal" } },
-            "2": { "question": "Separa las plantas de los animales.", "options": [{ "id": "flor", "label": "Flor", "group": "planta" }, { "id": "perro", "label": "Perro", "group": "animal" }, { "id": "arbol", "label": "Árbol", "group": "planta" }, { "id": "pez", "label": "Pez", "group": "animal" }], "correctAnswer": { "flor": "planta", "perro": "animal", "arbol": "planta", "pez": "animal" } },
-            "3": { "question": "Separa una planta de un animal.", "hint": "Las plantas fabrican su alimento; los animales se desplazan para buscarlo.", "analogy": "Una flor es planta y un perro es animal.", "options": [{ "id": "flor", "label": "Flor", "group": "planta" }, { "id": "perro", "label": "Perro", "group": "animal" }], "correctAnswer": { "flor": "planta", "perro": "animal" } }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En una caminata ecológica por Canchaque, los estudiantes encuentran cuatro organismos: un hongo sombrerito en un tronco caído, una orquídea silvestre con flores, un oso de anteojos y bacterias en una muestra de agua de quebrada. Clasifica cada especie en su Reino biológico.",
+              "options": [
+                { "id": "hongo", "label": "Hongo sombrerito", "group": "Reino Fungi" },
+                { "id": "orquidea", "label": "Orquídea silvestre", "group": "Reino Plantae" },
+                { "id": "oso", "label": "Oso de anteojos", "group": "Reino Animalia" },
+                { "id": "bacteria", "label": "Bacteria del agua", "group": "Reino Monera" }
+              ],
+              "correctAnswer": {
+                "hongo": "Reino Fungi",
+                "orquidea": "Reino Plantae",
+                "oso": "Reino Animalia",
+                "bacteria": "Reino Monera"
+              },
+              "distractorInsights": {
+                "hongo en Reino Plantae": "Confunde hongos con plantas por crecer fijos al suelo, ignorando que no hacen fotosíntesis y tienen pared de quitina.",
+                "bacteria en Reino Fungi": "Confunde bacterias procariotas microscópicas con el reino de los hongos eucariotas."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CRITERIOS DE REINOS BIOLÓGICOS:\n- Plantae: eucariotas fotosintéticos con clorofila.\n- Animalia: eucariotas heterótrofos pluricelulares con desplazamiento.\n- Fungi: eucariotas heterótrofos absorbentes (descomponedores sin fotosíntesis).\n- Monera: procariotas microscópicos sin núcleo definido.\n\nClasifica las especies de Canchaque según su Reino:",
+              "options": [
+                { "id": "hongo", "label": "Hongo sombrerito", "group": "Reino Fungi" },
+                { "id": "orquidea", "label": "Orquídea silvestre", "group": "Reino Plantae" },
+                { "id": "oso", "label": "Oso de anteojos", "group": "Reino Animalia" },
+                { "id": "bacteria", "label": "Bacteria del agua", "group": "Reino Monera" }
+              ],
+              "correctAnswer": {
+                "hongo": "Reino Fungi",
+                "orquidea": "Reino Plantae",
+                "oso": "Reino Animalia",
+                "bacteria": "Reino Monera"
+              },
+              "distractorInsights": {
+                "hongo en Reino Plantae": "Confunde hongos con plantas por crecer fijos al suelo, ignorando que no hacen fotosíntesis y tienen pared de quitina.",
+                "bacteria en Reino Fungi": "Confunde bacterias procariotas microscópicas con el reino de los hongos eucariotas."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: El moho del pan absorbe materia orgánica sin fotosíntesis y pertenece al Reino Fungi. Un alerce produce glucosa con luz y es del Reino Plantae. Una ameba procariota de estanque pertenece al Reino Monera.\n\nAplicando esta clasificación a los especímenes hallados en Canchaque, clasifica cada uno en su Reino correspondiente:",
+              "hint": "Recuerda que los hongos no son plantas porque no contienen clorofila ni fabrican glucosa solar.",
+              "analogy": "Un hongo es como un reciclador del bosque y no un productor vegetal de alimentos.",
+              "options": [
+                { "id": "hongo", "label": "Hongo sombrerito", "group": "Reino Fungi" },
+                { "id": "orquidea", "label": "Orquídea silvestre", "group": "Reino Plantae" },
+                { "id": "oso", "label": "Oso de anteojos", "group": "Reino Animalia" },
+                { "id": "bacteria", "label": "Bacteria del agua", "group": "Reino Monera" }
+              ],
+              "correctAnswer": {
+                "hongo": "Reino Fungi",
+                "orquidea": "Reino Plantae",
+                "oso": "Reino Animalia",
+                "bacteria": "Reino Monera"
+              },
+              "distractorInsights": {
+                "hongo en Reino Plantae": "Confunde hongos con plantas por crecer fijos al suelo, ignorando que no hacen fotosíntesis y tienen pared de quitina.",
+                "bacteria en Reino Fungi": "Confunde bacterias procariotas microscópicas con el reino de los hongos eucariotas."
+              }
+            }
           }
         },
         {
-          "id": "vida_020", "themeId": "clasificacion", "type": "group_sort", "requiresJustification": false,
+          "id": "vida_017",
+          "themeId": "clasificacion",
+          "type": "multiple_choice",
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "Clasifica estos animales como vertebrados o invertebrados.", "options": [{ "id": "pez", "label": "Pez", "group": "vertebrado" }, { "id": "hormiga", "label": "Hormiga", "group": "invertebrado" }, { "id": "perro", "label": "Perro", "group": "vertebrado" }, { "id": "caracol", "label": "Caracol", "group": "invertebrado" }], "correctAnswer": { "pez": "vertebrado", "hormiga": "invertebrado", "perro": "vertebrado", "caracol": "invertebrado" } },
-            "2": { "question": "Separa los animales con huesos de los que no tienen huesos internos.", "options": [{ "id": "gato", "label": "Gato", "group": "con huesos" }, { "id": "mariposa", "label": "Mariposa", "group": "sin huesos internos" }], "correctAnswer": { "gato": "con huesos", "mariposa": "sin huesos internos" } },
-            "3": { "question": "Separa un animal con huesos de uno sin huesos internos.", "hint": "El perro tiene huesos; la mariposa no tiene huesos internos.", "analogy": "Los huesos sostienen al perro como palitos sostienen una tienda.", "options": [{ "id": "perro", "label": "Perro", "group": "con huesos" }, { "id": "mariposa", "label": "Mariposa", "group": "sin huesos internos" }], "correctAnswer": { "perro": "con huesos", "mariposa": "sin huesos internos" } }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Un grupo de biólogos marinos en la Bahía de Sechura analiza cuatro ejemplares recolectados: tollo (pez), concha de abanico (molusco), lobo marino (mamífero) y langostino (crustáceo). Selecciona TODOS los animales de la lista que son VERTEBRADOS (poseen columna vertebral y esqueleto interno óseo o cartilaginoso).",
+              "options": [
+                "Tollo (pez de esqueleto cartilaginoso y columna vertebral)",
+                "Lobo marino (mamífero marino con esqueleto óseo interno)",
+                "Concha de abanico (molusco protegido por valvas calcáreas externas)",
+                "Langostino (artrópodo con cubierta externa rígida de quitina)"
+              ],
+              "correctAnswer": [
+                "Tollo (pez de esqueleto cartilaginoso y columna vertebral)",
+                "Lobo marino (mamífero marino con esqueleto óseo interno)"
+              ],
+              "distractorInsights": {
+                "Concha de abanico (molusco protegido por valvas calcáreas externas)": "Confunde la concha externa rígida protectora con un esqueleto óseo articualdo interno.",
+                "Langostino (artrópodo con cubierta externa rígida de quitina)": "Confunde el exoesqueleto quitinoso de los artrópodos con una columna vertebral interna."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CLAVE TAXONÓMICA ANIMAL:\n- Vertebrados: poseen columna vertebral interna que protege la médula espinal y sostiene el cuerpo por dentro.\n- Invertebrados: carecen de columna vertebral interna; pueden tener conchas o exoesqueletos externos.\n\nEn la Bahía de Sechura, selecciona TODOS los animales que son VERTEBRADOS:",
+              "options": [
+                "Tollo (pez de esqueleto cartilaginoso y columna vertebral)",
+                "Lobo marino (mamífero marino con esqueleto óseo interno)",
+                "Concha de abanico (molusco protegido por valvas calcáreas externas)",
+                "Langostino (artrópodo con cubierta externa rígida de quitina)"
+              ],
+              "correctAnswer": [
+                "Tollo (pez de esqueleto cartilaginoso y columna vertebral)",
+                "Lobo marino (mamífero marino con esqueleto óseo interno)"
+              ],
+              "distractorInsights": {
+                "Concha de abanico (molusco protegido por valvas calcáreas externas)": "Confunde la concha externa rígida protectora con un esqueleto óseo articualdo interno.",
+                "Langostino (artrópodo con cubierta externa rígida de quitina)": "Confunde el exoesqueleto quitinoso de los artrópodos con una columna vertebral interna."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Una pelícano tiene columna con vértebras internas (vertebrado). Un caracol tiene una caparazón dura por fuera pero no tiene huesos dentro (invertebrado).\n\nAplicando este criterio de anatomía interna a los ejemplares de Sechura, marca TODOS los animales que pertenecen al grupo de los VERTEBRADOS:",
+              "hint": "Fíjate en cuáles de estos animales poseen una estructura articulada de huesos o cartílago por dentro de su cuerpo.",
+              "analogy": "Las vértebras forman una columna interior como las vigas que sostienen un techo desde dentro del edificio.",
+              "options": [
+                "Tollo (pez de esqueleto cartilaginoso y columna vertebral)",
+                "Lobo marino (mamífero marino con esqueleto óseo interno)",
+                "Concha de abanico (molusco protegido por valvas calcáreas externas)",
+                "Langostino (artrópodo con cubierta externa rígida de quitina)"
+              ],
+              "correctAnswer": [
+                "Tollo (pez de esqueleto cartilaginoso y columna vertebral)",
+                "Lobo marino (mamífero marino con esqueleto óseo interno)"
+              ],
+              "distractorInsights": {
+                "Concha de abanico (molusco protegido por valvas calcáreas externas)": "Confunde la concha externa rígida protectora con un esqueleto óseo articualdo interno.",
+                "Langostino (artrópodo con cubierta externa rígida de quitina)": "Confunde el exoesqueleto quitinoso de los artrópodos con una columna vertebral interna."
+              }
+            }
+          }
+        },
+        {
+          "id": "vida_018",
+          "themeId": "clasificacion",
+          "type": "single_choice",
+          "requiresJustification": true,
+          "levels": {
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En la sierra de Huancabamba, un estudiante compara dos vegetales: un árbol de romerillo que desarrolla flores vistosas y frutos con semillas, y un musgo verde que crece pegado a las rocas húmedas produciendo diminutas esporas sin formar flores ni semillas. ¿Cómo se clasifican correctamente según sus estructuras reproductivas?",
+              "options": [
+                "El romerillo es una planta con flor (Angiosperma) y el musgo es una planta sin flor ni semilla (Briófita)",
+                "Ambas son plantas sin flor porque todos los vegetales andinos se reproducen solo por fragmentación de raíces",
+                "El musgo es un animal invertebrado adaptado al agua y el romerillo es un hongo leñoso de montaña",
+                "El romerillo es un hongo Fungi porque produce semillas duras como piedras bajo la tierra"
+              ],
+              "correctAnswer": "El romerillo es una planta con flor (Angiosperma) y el musgo es una planta sin flor ni semilla (Briófita)",
+              "distractorInsights": {
+                "Ambas son plantas sin flor porque todos los vegetales andinos se reproducen solo por fragmentación de raíces": "Niega la reproducción sexual por flores y semillas en vegetales vasculares de altura.",
+                "El musgo es un animal invertebrado adaptado al agua y el romerillo es un hongo leñoso de montaña": "Reclasifica erróneamente especies del reino vegetal a reinos animal y fungi por su hábitat.",
+                "El romerillo es un hongo Fungi porque produce semillas duras como piedras bajo la tierra": "Confunde frutos y semillas de plantas Angiospermas con estructuras de hongos."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "CLASIFICACIÓN BOTÁNICA:\n- Plantas con flor (Espermatofitas/Angiospermas): producen flores, frutos y semillas para reproducirse.\n- Plantas sin flor (Briófitas/Pteridófitas): no forman flores ni semillas; se reproducen por esporas microscópicas.\n\nEn Huancabamba, ¿cómo se clasifican el romerillo y el musgo?",
+              "options": [
+                "El romerillo es una planta con flor (Angiosperma) y el musgo es una planta sin flor ni semilla (Briófita)",
+                "Ambas son plantas sin flor porque todos los vegetales andinos se reproducen solo por fragmentación de raíces",
+                "El musgo es un animal invertebrado adaptado al agua y el romerillo es un hongo leñoso de montaña",
+                "El romerillo es un hongo Fungi porque produce semillas duras como piedras bajo la tierra"
+              ],
+              "correctAnswer": "El romerillo es una planta con flor (Angiosperma) y el musgo es una planta sin flor ni semilla (Briófita)",
+              "distractorInsights": {
+                "Ambas son plantas sin flor porque todos los vegetales andinos se reproducen solo por fragmentación de raíces": "Niega la reproducción sexual por flores y semillas en vegetales vasculares de altura.",
+                "El musgo es un animal invertebrado adaptado al agua y el romerillo es un hongo leñoso de montaña": "Reclasifica erróneamente especies del reino vegetal a reinos animal y fungi por su hábitat.",
+                "El romerillo es un hongo Fungi porque produce semillas duras como piedras bajo la tierra": "Confunde frutos y semillas de plantas Angiospermas con estructuras de hongos."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Un rosal forma botones florales que originan frutos con semillas (planta con flor). Un helecho no produce flores y libera polvillo de esporas debajo de sus hojas (planta sin flor).\n\nAplicando esta diferencia botánica al romerillo y al musgo de Huancabamba: ¿Cómo se clasifican ambos de manera correcta?",
+              "hint": "Observa cuál de las dos plantas utiliza flores y frutos para formar sus semillas.",
+              "analogy": "Las flores y semillas son el sistema reproductivo moderno de muchas plantas, mientras que las esporas son una estrategia sin flores.",
+              "options": [
+                "El romerillo es una planta con flor (Angiosperma) y el musgo es una planta sin flor ni semilla (Briófita)",
+                "Ambas son plantas sin flor porque todos los vegetales andinos se reproducen solo por fragmentación de raíces",
+                "El musgo es un animal invertebrado adaptado al agua y el romerillo es un hongo leñoso de montaña",
+                "El romerillo es un hongo Fungi porque produce semillas duras como piedras bajo la tierra"
+              ],
+              "correctAnswer": "El romerillo es una planta con flor (Angiosperma) y el musgo es una planta sin flor ni semilla (Briófita)",
+              "distractorInsights": {
+                "Ambas son plantas sin flor porque todos los vegetales andinos se reproducen solo por fragmentación de raíces": "Niega la reproducción sexual por flores y semillas en vegetales vasculares de altura.",
+                "El musgo es un animal invertebrado adaptado al agua y el romerillo es un hongo leñoso de montaña": "Reclasifica erróneamente especies del reino vegetal a reinos animal y fungi por su hábitat.",
+                "El romerillo es un hongo Fungi porque produce semillas duras como piedras bajo la tierra": "Confunde frutos y semillas de plantas Angiospermas con estructuras de hongos."
+              }
+            }
           }
         }
       ]
@@ -221,33 +1160,189 @@
       "title": "La vida en nuestro entorno",
       "activities": [
         {
-          "id": "vida_013",
-          "themeId": "la_vida_en_nuestro_entorno",
-          "type": "fill_blank",
-          "requiresJustification": true,
-          "levels": {
-            "1": { "question": "Completa: Cuidar el agua del río Piura ayuda a proteger a los seres vivos que ____ en él.", "options": ["viven", "se fabrican", "son de plástico", "nunca necesitan agua"], "correctAnswer": "viven" },
-            "2": { "question": "Completa: Los peces ____ en el agua del río.", "options": ["viven", "son piedras", "son juguetes", "crecen en el aire"], "correctAnswer": "viven" },
-            "3": { "question": "Completa: El río es hogar de los peces; por eso los peces ____ allí.", "hint": "Un hogar es el lugar donde vive un ser vivo.", "analogy": "El río es para un pez como una casa es para una familia.", "options": ["viven", "son rocas", "son mesas"], "correctAnswer": "viven" }
-          }
-        },
-        {
-          "id": "vida_014",
+          "id": "vida_019",
           "themeId": "la_vida_en_nuestro_entorno",
           "type": "single_choice",
           "requiresJustification": false,
           "levels": {
-            "1": { "question": "¿Cuál es una acción responsable para cuidar la vida en una playa de Piura?", "options": ["Llevar los residuos a un tacho", "Dejar botellas en la arena", "Molestar a las aves", "Derramar aceite en el agua"], "correctAnswer": "Llevar los residuos a un tacho" },
-            "2": { "question": "¿Qué debes hacer con una envoltura cuando visitas la playa?", "options": ["Botarla en un tacho", "Dejarla en la arena", "Tirarla al mar", "Esconderla bajo una piedra"], "correctAnswer": "Botarla en un tacho" },
-            "3": { "question": "Elige la acción que cuida a los animales de la playa.", "hint": "La basura puede dañar a los animales.", "analogy": "Cuidar la playa es como mantener limpia tu propia casa.", "options": ["Poner la basura en un tacho", "Tirar basura al mar", "Molestar a las aves"], "correctAnswer": "Poner la basura en un tacho" }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En la playa de Cabo Blanco en Talara, habita la tortuga verde marina, una especie amenazada que emerge a la orilla para enterrar sus huevos en la arena. ¿Qué condición de su entorno natural es indispensable conservar para asegurar la supervivencia de sus crías?",
+              "options": [
+                "Playas de arena limpia sin contaminación lumínica ni plásticos para depositar sus huevos con seguridad",
+                "Carreteras asfaltadas e iluminadas sobre la orilla para que las crías encuentren la pista al nacer",
+                "Aguas estancadas llenas de bolsas plásticas flotantes que imiten medusas para su alimentación",
+                "Muros de concreto en la orilla que impidan a la tortuga marina regresar al océano profundo"
+              ],
+              "correctAnswer": "Playas de arena limpia sin contaminación lumínica ni plásticos para depositar sus huevos con seguridad",
+              "distractorInsights": {
+                "Carreteras asfaltadas e iluminadas sobre la orilla para que las crías encuentren la pista al nacer": "Confunde la desorientación mortal por luz artificial en tortugas recién nacidas con un beneficio.",
+                "Aguas estancadas llenas de bolsas plásticas flotantes que imiten medusas para su alimentación": "Considera erróneamente el plástico marino como alimento nutritivo en lugar de una amenaza mortal.",
+                "Muros de concreto en la orilla que impidan a la tortuga marina regresar al océano profundo": "Promueve el aislamiento físico del hábitat marino como una medida de protección."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "EVALUACIÓN DE AMENAZAS EN EL LITORAL:\n- Peligro: plásticos (asfixia por ingesta) y luces artificiales (desorientan a las crías hacia las pistas en vez del mar).\n- Necesidad biológica: arena limpia, oscuridad nocturna natural y libre acceso al mar.\n\nEn Cabo Blanco, ¿qué condición es indispensable conservar para la tortuga verde?",
+              "options": [
+                "Playas de arena limpia sin contaminación lumínica ni plásticos para depositar sus huevos con seguridad",
+                "Carreteras asfaltadas e iluminadas sobre la orilla para que las crías encuentren la pista al nacer",
+                "Aguas estancadas llenas de bolsas plásticas flotantes que imiten medusas para su alimentación",
+                "Muros de concreto en la orilla que impidan a la tortuga marina regresar al océano profundo"
+              ],
+              "correctAnswer": "Playas de arena limpia sin contaminación lumínica ni plásticos para depositar sus huevos con seguridad",
+              "distractorInsights": {
+                "Carreteras asfaltadas e iluminadas sobre la orilla para que las crías encuentren la pista al nacer": "Confunde la desorientación mortal por luz artificial en tortugas recién nacidas con un beneficio.",
+                "Aguas estancadas llenas de bolsas plásticas flotantes que imiten medusas para su alimentación": "Considera erróneamente el plástico marino como alimento nutritivo en lugar de una amenaza mortal.",
+                "Muros de concreto en la orilla que impidan a la tortuga marina regresar al océano profundo": "Promueve el aislamiento físico del hábitat marino como una medida de protección."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: En las playas de Sechura, los guardianes de fauna protegen los nidos de aves marinas limpiando la basura y apagando focos potentes; de este modo, las crías nacen sanas y llegan directo al agua sin perderse.\n\nAplicando esta medida de conservación a las tortugas de Cabo Blanco en Talara: ¿Qué condición del entorno es indispensable mantener?",
+              "hint": "Elige la alternativa que garantice un ambiente libre de contaminación física y luminosa para el ciclo del animal.",
+              "analogy": "Proteger la playa limpia es como mantener la cuna de un bebé segura y sin objetos peligrosos alrededor.",
+              "options": [
+                "Playas de arena limpia sin contaminación lumínica ni plásticos para depositar sus huevos con seguridad",
+                "Carreteras asfaltadas e iluminadas sobre la orilla para que las crías encuentren la pista al nacer",
+                "Aguas estancadas llenas de bolsas plásticas flotantes que imiten medusas para su alimentación",
+                "Muros de concreto en la orilla que impidan a la tortuga marina regresar al océano profundo"
+              ],
+              "correctAnswer": "Playas de arena limpia sin contaminación lumínica ni plásticos para depositar sus huevos con seguridad",
+              "distractorInsights": {
+                "Carreteras asfaltadas e iluminadas sobre la orilla para que las crías encuentren la pista al nacer": "Confunde la desorientación mortal por luz artificial en tortugas recién nacidas con un beneficio.",
+                "Aguas estancadas llenas de bolsas plásticas flotantes que imiten medusas para su alimentación": "Considera erróneamente el plástico marino como alimento nutritivo en lugar de una amenaza mortal.",
+                "Muros de concreto en la orilla que impidan a la tortuga marina regresar al océano profundo": "Promueve el aislamiento físico del hábitat marino como una medida de protección."
+              }
+            }
           }
         },
         {
-          "id": "vida_021", "themeId": "la_vida_en_nuestro_entorno", "type": "drag_drop", "requiresJustification": true,
+          "id": "vida_020",
+          "themeId": "la_vida_en_nuestro_entorno",
+          "type": "drag_drop",
+          "requiresJustification": false,
           "levels": {
-            "1": { "question": "Lleva cada acción al lugar correcto: cuida o daña la vida del entorno.", "options": [{ "id": "reciclar", "label": "Reciclar una botella", "zone": "Cuida" }, { "id": "basura", "label": "Tirar basura al río", "zone": "Daña" }, { "id": "plantar", "label": "Plantar un árbol", "zone": "Cuida" }], "correctAnswer": { "reciclar": "Cuida", "basura": "Daña", "plantar": "Cuida" } },
-            "2": { "question": "Une cada acción con cuida o daña.", "options": [{ "id": "tacho", "label": "Usar un tacho", "zone": "Cuida" }, { "id": "humo", "label": "Quemar basura", "zone": "Daña" }], "correctAnswer": { "tacho": "Cuida", "humo": "Daña" } },
-            "3": { "question": "Lleva la acción que cuida el entorno a su zona.", "hint": "La basura debe ir en un tacho.", "analogy": "Cuidar el entorno es cuidar la casa de plantas y animales.", "options": [{ "id": "tacho", "label": "Usar un tacho", "zone": "Cuida" }], "correctAnswer": { "tacho": "Cuida" } }
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "En la cuenca del río Chira, diversas acciones humanas modifican el equilibrio natural. Clasifica cada una de las siguientes actividades según su impacto ecológico sobre la biodiversidad regional.",
+              "options": [
+                { "id": "tala", "label": "Tala indiscriminada de algarrobos para elaboración de carbón", "zone": "Acción humana que destruye hábitats y daña la biodiversidad" },
+                { "id": "vertido", "label": "Arrojo de envases plásticos y pesticidas al cauce del río", "zone": "Acción humana que destruye hábitats y daña la biodiversidad" },
+                { "id": "reforestacion", "label": "Reforestar zonas degradadas con plantones de algarrobo y tamarindo", "zone": "Acción humana que protege y conserva los ecosistemas locales" },
+                { "id": "limpieza", "label": "Organizar jornadas de recojo de residuos sólidos en las riberas", "zone": "Acción humana que protege y conserva los ecosistemas locales" }
+              ],
+              "correctAnswer": {
+                "tala": "Acción humana que destruye hábitats y daña la biodiversidad",
+                "vertido": "Acción humana que destruye hábitats y daña la biodiversidad",
+                "reforestacion": "Acción humana que protege y conserva los ecosistemas locales",
+                "limpieza": "Acción humana que protege y conserva los ecosistemas locales"
+              },
+              "distractorInsights": {
+                "tala en Acción humana que protege y conserva los ecosistemas locales": "Cree falsamente que cortar árboles nativos acelera el crecimiento del bosque seco.",
+                "vertido en Acción humana que protege y conserva los ecosistemas locales": "Asume que los desechos plásticos o agroquímicos benefician a las especies del río."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "GUÍA DE IMPACTO AMBIENTAL:\n- Destruye biodiversidad: deforestación, contaminación hídrica y alteración del refugio animal.\n- Conserva ecosistemas: reforestación nativa, descontaminación y limpieza participativa.\n\nClasifica las acciones observadas en el río Chira:",
+              "options": [
+                { "id": "tala", "label": "Tala indiscriminada de algarrobos para elaboración de carbón", "zone": "Acción humana que destruye hábitats y daña la biodiversidad" },
+                { "id": "vertido", "label": "Arrojo de envases plásticos y pesticidas al cauce del río", "zone": "Acción humana que destruye hábitats y daña la biodiversidad" },
+                { "id": "reforestacion", "label": "Reforestar zonas degradadas con plantones de algarrobo y tamarindo", "zone": "Acción humana que protege y conserva los ecosistemas locales" },
+                { "id": "limpieza", "label": "Organizar jornadas de recojo de residuos sólidos en las riberas", "zone": "Acción humana que protege y conserva los ecosistemas locales" }
+              ],
+              "correctAnswer": {
+                "tala": "Acción humana que destruye hábitats y daña la biodiversidad",
+                "vertido": "Acción humana que destruye hábitats y daña la biodiversidad",
+                "reforestacion": "Acción humana que protege y conserva los ecosistemas locales",
+                "limpieza": "Acción humana que protege y conserva los ecosistemas locales"
+              },
+              "distractorInsights": {
+                "tala en Acción humana que protege y conserva los ecosistemas locales": "Cree falsamente que cortar árboles nativos acelera el crecimiento del bosque seco.",
+                "vertido en Acción humana que protege y conserva los ecosistemas locales": "Asume que los desechos plásticos o agroquímicos benefician a las especies del río."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Tirar desmonte a una laguna contamina la vivienda de los peces (daña el ambiente). Sembrar totora en las orillas purifica el agua y da refugio a aves (cuida el ambiente).\n\nAplicando este criterio ecológico a las acciones en la cuenca del río Chira, ubica cada acción en el impacto que genera:",
+              "hint": "Separa las actividades que contaminan o destruyen árboles de aquellas que limpian o plantan vegetación nativa.",
+              "analogy": "Cuidar el entorno es como reparar las paredes de tu casa; dañarlo es destruirlas dejando a la familia sin techo.",
+              "options": [
+                { "id": "tala", "label": "Tala indiscriminada de algarrobos para elaboración de carbón", "zone": "Acción humana que destruye hábitats y daña la biodiversidad" },
+                { "id": "vertido", "label": "Arrojo de envases plásticos y pesticidas al cauce del río", "zone": "Acción humana que destruye hábitats y daña la biodiversidad" },
+                { "id": "reforestacion", "label": "Reforestar zonas degradadas con plantones de algarrobo y tamarindo", "zone": "Acción humana que protege y conserva los ecosistemas locales" },
+                { "id": "limpieza", "label": "Organizar jornadas de recojo de residuos sólidos en las riberas", "zone": "Acción humana que protege y conserva los ecosistemas locales" }
+              ],
+              "correctAnswer": {
+                "tala": "Acción humana que destruye hábitats y daña la biodiversidad",
+                "vertido": "Acción humana que destruye hábitats y daña la biodiversidad",
+                "reforestacion": "Acción humana que protege y conserva los ecosistemas locales",
+                "limpieza": "Acción humana que protege y conserva los ecosistemas locales"
+              },
+              "distractorInsights": {
+                "tala en Acción humana que protege y conserva los ecosistemas locales": "Cree falsamente que cortar árboles nativos acelera el crecimiento del bosque seco.",
+                "vertido en Acción humana que protege y conserva los ecosistemas locales": "Asume que los desechos plásticos o agroquímicos benefician a las especies del río."
+              }
+            }
+          }
+        },
+        {
+          "id": "vida_021",
+          "themeId": "la_vida_en_nuestro_entorno",
+          "type": "fill_blank",
+          "requiresJustification": true,
+          "levels": {
+            "1": {
+              "cognitiveDemand": "analizar",
+              "question": "Estudiantes de Veintiséis de Octubre en Piura instalan un biohuerto escolar sostenible utilizando agua reutilizada del lavado de verduras para regar cultivos de culantro, tomate y frijol de palo. Esta propuesta contribuye activamente al cuidado del entorno porque ____.",
+              "options": [
+                "optimiza el uso del agua y promueve la conservación de suelos y biodiversidad vegetal",
+                "demuestra que las hortalizas crecen más rápido cuando se nutren de pedazos de plástico",
+                "permite talar los árboles del parque para construir pistas de cemento en el colegio",
+                "garantiza que los vegetales ya no necesiten luz del sol para realizar la fotosíntesis"
+              ],
+              "correctAnswer": "optimiza el uso del agua y promueve la conservación de suelos y biodiversidad vegetal",
+              "distractorInsights": {
+                "demuestra que las hortalizas crecen más rápido cuando se nutren de pedazos de plástico": "Confunde la reutilización ecológica de agua con la nutrición vegetal mediante plástico.",
+                "permite talar los árboles del parque para construir pistas de cemento en el colegio": "Promueve la destrucción de áreas verdes urbanas en lugar de su conservación.",
+                "garantiza que los vegetales ya no necesiten luz del sol para realizar la fotosíntesis": "Asume falsamente que el riego sustituye el requerimiento de energía solar en la fotosíntesis."
+              }
+            },
+            "2": {
+              "cognitiveDemand": "analizar",
+              "question": "PRINCIPIO DE SOSTENIBILIDAD REGIONAL:\nReutilizar agua no contaminada reduce el derroche hídrico en zonas áridas y cultivar plantas nativas fortalece la biodiversidad y protege el suelo frente a la erosión.\n\nEn Veintiséis de Octubre, el biohuerto escolar contribuye al entorno porque ____.",
+              "options": [
+                "optimiza el uso del agua y promueve la conservación de suelos y biodiversidad vegetal",
+                "demuestra que las hortalizas crecen más rápido cuando se nutren de pedazos de plástico",
+                "permite talar los árboles del parque para construir pistas de cemento en el colegio",
+                "garantiza que los vegetales ya no necesiten luz del sol para realizar la fotosíntesis"
+              ],
+              "correctAnswer": "optimiza el uso del agua y promueve la conservación de suelos y biodiversidad vegetal",
+              "distractorInsights": {
+                "demuestra que las hortalizas crecen más rápido cuando se nutren de pedazos de plástico": "Confunde la reutilización ecológica de agua con la nutrición vegetal mediante plástico.",
+                "permite talar los árboles del parque para construir pistas de cemento en el colegio": "Promueve la destrucción de áreas verdes urbanas en lugar de su conservación.",
+                "garantiza que los vegetales ya no necesiten luz del sol para realizar la fotosíntesis": "Asume falsamente que el riego sustituye el requerimiento de energía solar en la fotosíntesis."
+              }
+            },
+            "3": {
+              "cognitiveDemand": "aplicar",
+              "question": "CASO MODELO RESUELTO: Una familia en Catacaos recicla el agua de lluvia para regar su jardín de algarrobos. Esto ahorra agua potable y mantiene verde el entorno comunal sin dañar el ecosistema.\n\nAplicando esta lógica de desarrollo sostenible al proyecto del colegio en Veintiséis de Octubre: El biohuerto escolar ayuda al entorno porque ____.",
+              "hint": "Elige la alternativa que destaca el ahorro de recursos hídricos y la protección de los vegetales.",
+              "analogy": "Reutilizar agua para las plantas es como cerrar el caño mientras te lavas los dientes: cuida un recurso escaso en Piura.",
+              "options": [
+                "optimiza el uso del agua y promueve la conservación de suelos y biodiversidad vegetal",
+                "demuestra que las hortalizas crecen más rápido cuando se nutren de pedazos de plástico",
+                "permite talar los árboles del parque para construir pistas de cemento en el colegio",
+                "garantiza que los vegetales ya no necesiten luz del sol para realizar la fotosíntesis"
+              ],
+              "correctAnswer": "optimiza el uso del agua y promueve la conservación de suelos y biodiversidad vegetal",
+              "distractorInsights": {
+                "demuestra que las hortalizas crecen más rápido cuando se nutren de pedazos de plástico": "Confunde la reutilización ecológica de agua con la nutrición vegetal mediante plástico.",
+                "permite talar los árboles del parque para construir pistas de cemento en el colegio": "Promueve la destrucción de áreas verdes urbanas en lugar de su conservación.",
+                "garantiza que los vegetales ya no necesiten luz del sol para realizar la fotosíntesis": "Asume falsamente que el riego sustituye el requerimiento de energía solar en la fotosíntesis."
+              }
+            }
           }
         }
       ]
