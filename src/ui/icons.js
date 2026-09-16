@@ -4,6 +4,8 @@ const ICON_PATHS = Object.freeze({
   spark: '<path d="M20 3c0 10-7 17-17 17 10 0 17 7 17 17 0-10 7-17 17-17-10 0-17-7-17-17Z"/>',
   trophy: '<path d="M12 5h16v9c0 5-3.6 9-8 9s-8-4-8-9V5Z"/><path d="M12 8H6v4c0 4 2.5 6 6 6M28 8h6v4c0 4-2.5 6-6 6M20 23v8M14 35h12M17 31h6"/>',
   compass: '<circle cx="20" cy="20" r="16"/><path d="m25 12-4 9-9 4 4-9 9-4Z"/><path d="M20 6v3M34 20h-3M20 34v-3M6 20h3"/>',
+  sound: '<path d="M6 16h7l8-6v20l-8-6H6z"/><path d="M27 15c2 1.5 3 3.1 3 5s-1 3.5-3 5M31 11c3.5 2.5 5 5.6 5 9s-1.5 6.5-5 9"/>',
+  muted: '<path d="M6 16h7l8-6v20l-8-6H6zM28 16l8 8M36 16l-8 8"/>',
 });
 
 /** Crea un icono SVG local, sin imágenes remotas ni fuentes de iconos. */

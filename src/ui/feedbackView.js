@@ -1,4 +1,5 @@
 import { createIcon } from './icons.js';
+import { createMascot } from './mascot.js';
 
 const ENCOURAGEMENTS = Object.freeze([
   '¡Muy bien! Sigues avanzando en tu misión.',
@@ -42,12 +43,24 @@ export function createFeedbackView({ gameState, onContinue }) {
   const message = document.createElement('p');
   message.textContent = getFeedbackMessage({ correct: latestAttempt?.correct, hasNextLevel });
 
+  const mascotMood = latestAttempt?.correct ? 'feliz' : hasNextLevel ? 'pensando' : 'celebrando';
+  const mascot = createMascot(mascotMood, 'Capibara acompañando tu avance');
+  const confetti = !hasNextLevel ? createConfetti() : null;
+
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'primary-button';
   button.textContent = hasNextLevel ? 'Ver el siguiente nivel' : 'Continuar';
   button.addEventListener('click', onContinue);
 
-  card.append(icon, title, message, button);
+  card.append(...[confetti, mascot, icon, title, message, button].filter(Boolean));
   return card;
+}
+
+function createConfetti() {
+  const confetti = document.createElement('div');
+  confetti.className = 'confetti';
+  confetti.setAttribute('aria-hidden', 'true');
+  for (let index = 0; index < 10; index += 1) confetti.append(document.createElement('span'));
+  return confetti;
 }

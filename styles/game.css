@@ -1,8 +1,8 @@
 .app-shell {
   background:
-    radial-gradient(circle at 10% 10%, #d6f1c9 0 6%, transparent 6.2%),
-    radial-gradient(circle at 90% 18%, #fce3a3 0 7%, transparent 7.2%),
-    linear-gradient(150deg, #eff9ee, #e5f5f2);
+    radial-gradient(circle at 10% 10%, rgb(76 149 108 / 17%) 0 6%, transparent 6.2%),
+    radial-gradient(circle at 90% 18%, rgb(255 200 87 / 25%) 0 7%, transparent 7.2%),
+    linear-gradient(150deg, var(--color-bg), #fff1d8);
 }
 
 .game-screen,
@@ -17,8 +17,8 @@
 
 .game-card,
 .progress-panel {
-  border: 0.125rem solid rgb(45 122 104 / 16%);
-  border-radius: 1.25rem;
+  border: 0.125rem solid rgb(76 149 108 / 23%);
+  border-radius: 1.125rem;
   background: var(--color-surface);
   box-shadow: 0 0.5rem 1.5rem rgb(23 51 44 / 12%);
 }
@@ -39,13 +39,12 @@
 .game-card h1 {
   margin: 0.5rem 0 0.75rem;
   color: var(--color-primary-dark);
-  font-size: clamp(1.5rem, 6vw, 2.1rem);
+  font-size: clamp(1.75rem, 6vw, 2rem);
   line-height: 1.2;
 }
 
-.game-card p {
-  color: var(--color-text-muted);
-}
+.game-card p { color: var(--color-text-muted); }
+.activity-card h1 { font-family: var(--font-family-base); font-size: clamp(1.0625rem, 4.5vw, 1.125rem); font-weight: 700; line-height: 1.48; }
 
 .ui-icon {
   width: 1.3rem;
@@ -63,6 +62,16 @@
   background: #d5efcf;
   padding: 0.65rem;
 }
+
+.mascot-image {
+  display: block;
+  width: min(11.5rem, 48vw);
+  height: auto;
+  margin: 0 auto 0.5rem;
+  filter: drop-shadow(0 0.35rem 0.4rem rgb(51 64 46 / 15%));
+}
+
+.mascot-image--thinking { width: min(9rem, 38vw); }
 
 .mascot-icon { color: var(--color-primary-dark); }
 .result-icon { color: #ae7406; }
@@ -99,7 +108,7 @@
   overflow: hidden;
   border: 0;
   border-radius: 999px;
-  accent-color: var(--color-primary);
+  accent-color: var(--color-river);
 }
 
 .activity-form,
@@ -150,14 +159,14 @@ textarea { resize: vertical; }
   min-height: 3.25rem;
   padding: 0.75rem;
   border: 0.125rem solid #c9ddd7;
-  border-radius: 0.85rem;
+  border-radius: 1rem;
   background: #fff;
   cursor: pointer;
   transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
-.choice-option:hover { border-color: var(--color-primary); transform: translateY(-0.1rem); }
-.choice-option:has(input:checked) { border-color: var(--color-primary); background: #e7f7ee; }
+.choice-option:hover { border-color: var(--color-primary-dark); transform: translateY(-0.1rem); }
+.choice-option:has(input:checked) { border-color: var(--color-primary-dark); background: #e7f7ee; }
 .choice-option input { width: 1.25rem; height: 1.25rem; accent-color: var(--color-primary); }
 
 .sort-list,
@@ -187,7 +196,7 @@ textarea { resize: vertical; }
 .secondary-button {
   min-height: 2.75rem;
   border: 0;
-  border-radius: 0.85rem;
+  border-radius: 1rem;
   font: inherit;
   font-weight: 800;
   cursor: pointer;
@@ -209,11 +218,12 @@ textarea { resize: vertical; }
 
 .primary-button,
 .secondary-button {
-  padding: 0.75rem 1rem;
+  min-height: 2.75rem;
+  padding: 0.7rem 1rem;
 }
 
-.primary-button { background: var(--color-primary); color: #fff; box-shadow: 0 0.25rem 0 #1e6655; }
-.secondary-button { background: var(--color-accent); color: #513904; box-shadow: 0 0.25rem 0 #c99227; }
+.primary-button { background: var(--color-primary-dark); color: #fff; box-shadow: 0 0.25rem 0 #1f5039; }
+.secondary-button { background: var(--color-secondary); color: #493600; box-shadow: 0 0.25rem 0 #c79228; }
 .primary-button:hover, .secondary-button:hover { transform: translateY(-0.12rem); }
 .primary-button:active, .secondary-button:active { transform: translateY(0.1rem); box-shadow: none; }
 
@@ -225,6 +235,45 @@ textarea { resize: vertical; }
 }
 
 .is-error { border-color: #e6aaa5; }
+
+.sound-toggle {
+  position: fixed;
+  z-index: 2;
+  top: 0.8rem;
+  right: 0.8rem;
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 0.125rem solid var(--color-primary-dark);
+  border-radius: 50%;
+  background: var(--color-card);
+  color: var(--color-primary-dark);
+  box-shadow: 0 0.2rem 0.6rem rgb(51 64 46 / 15%);
+  cursor: pointer;
+}
+
+.sound-toggle .ui-icon { width: 1.35rem; height: 1.35rem; }
+
+.confetti {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 1.4rem;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+}
+
+.confetti span {
+  width: 0.5rem;
+  height: 0.8rem;
+  background: var(--color-secondary);
+  animation: confetti-fall 900ms ease-out both;
+}
+.confetti span:nth-child(2n) { background: var(--color-river); animation-delay: 80ms; }
+.confetti span:nth-child(3n) { background: var(--color-correct); animation-delay: 150ms; }
+
+@keyframes confetti-fall { from { opacity: 0; transform: translateY(-1rem) rotate(0deg); } to { opacity: 1; transform: translateY(0.25rem) rotate(220deg); } }
 
 @keyframes card-enter {
   from { opacity: 0; transform: translateY(0.45rem); }

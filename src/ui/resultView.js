@@ -1,4 +1,5 @@
 import { createIcon } from './icons.js';
+import { createMascot } from './mascot.js';
 
 const RESULT_MESSAGES = Object.freeze({
   high: [
@@ -42,12 +43,18 @@ export function createResultView({ score, onRestart }) {
   const message = document.createElement('p');
   message.textContent = getResultMessage(score);
 
+  const confetti = document.createElement('div');
+  confetti.className = 'confetti';
+  confetti.setAttribute('aria-hidden', 'true');
+  for (let index = 0; index < 12; index += 1) confetti.append(document.createElement('span'));
+  const mascot = createMascot('celebrando', 'Capibara celebrando el final del juego');
+
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'secondary-button';
   button.textContent = 'Jugar de nuevo';
   button.addEventListener('click', onRestart);
 
-  card.append(icon, title, scoreText, message, button);
+  card.append(confetti, mascot, icon, title, scoreText, message, button);
   return card;
 }

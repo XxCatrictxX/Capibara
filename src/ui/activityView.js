@@ -1,4 +1,5 @@
 import { createActivity } from '../activities/activityFactory.js';
+import { createMascot } from './mascot.js';
 
 function appendJustification(form, activity) {
   if (!activity.requiresJustification) return null;
@@ -150,6 +151,10 @@ export function createActivityView({ activity, gameState, onSubmit }) {
 
   const question = document.createElement('h1');
   question.textContent = adapter.getQuestion(level);
+
+  if (level > 1) {
+    card.append(createMascot('pensando', 'Capibara pensando en una pista'));
+  }
 
   const form = document.createElement('form');
   form.className = 'activity-form';

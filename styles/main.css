@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;700&display=swap');
+
 :root {
-  --color-primary: #2d7a68;
-  --color-primary-dark: #1d5d4e;
-  --color-accent: #f6b84c;
-  --color-background: #f5fbf7;
-  --color-surface: #ffffff;
-  --color-text: #17332c;
-  --color-text-muted: #526b63;
+  --color-primary: #4C956C;
+  --color-primary-dark: #2F6B4F;
+  --color-secondary: #FFC857;
+  --color-river: #4A90A4;
+  --color-correct: #6BCB77;
+  --color-support: #FFB84C;
+  --color-alert-soft: #FF8C69;
+  --color-bg: #FFF8ED;
+  --color-card: #FFFFFF;
+  --color-text: #33402E;
+  --color-text-secondary: #6B7A5E;
+  --color-text-secondary-aa: #526443;
+  --color-background: var(--color-bg);
+  --color-surface: var(--color-card);
+  --color-accent: var(--color-secondary);
+  --color-text-muted: var(--color-text-secondary-aa);
   --color-focus: #195bdf;
-  --font-family-base: "Nunito", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --font-family-heading: 'Baloo 2', 'Arial Rounded MT Bold', system-ui, sans-serif;
+  --font-family-base: 'Nunito', Arial, system-ui, sans-serif;
   --font-size-base: 1rem;
   --line-height-base: 1.5;
   --radius-medium: 0.75rem;
@@ -28,6 +40,10 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
+}
+
+h1, h2, .mission-label, .level-label, button {
+  font-family: var(--font-family-heading);
 }
 
 .app-shell {

@@ -3,18 +3,21 @@ import { createFeedbackView } from './feedbackView.js';
 import { createProgressView } from './progressView.js';
 import { createResultView } from './resultView.js';
 import { createIcon } from './icons.js';
+import { createMascot } from './mascot.js';
+import { createAudioController } from './audioController.js';
 
 function replaceScreen(root, content) {
   root.replaceChildren(content);
 }
 
-function createStatusCard(titleText, messageText, isError = false) {
+function createStatusCard(titleText, messageText, isError = false, mascotMood = null) {
   const card = document.createElement('section');
   card.className = `game-card status-card${isError ? ' is-error' : ''}`;
   const title = document.createElement('h1');
   title.textContent = titleText;
   const message = document.createElement('p');
   message.textContent = messageText;
+  if (mascotMood) card.append(createMascot(mascotMood, 'Capibara esperando'));
   card.append(title, message);
   return card;
 }
@@ -26,12 +29,11 @@ function sanitizeName(name) {
 function createRegistrationView(onRegister) {
   const card = document.createElement('section');
   card.className = 'game-card registration-card';
-  const mascot = createIcon('capybara');
-  mascot.classList.add('mascot-icon');
+  const mascot = createMascot('feliz', 'Capibara feliz te da la bienvenida');
   const title = document.createElement('h1');
   title.textContent = '¡Hola, explorador o exploradora!';
   const intro = document.createElement('p');
-  intro.textContent = 'Recorreremos siete misiones sobre la vida y los seres vivos.';
+  intro.textContent = 'Recorreremos doce misiones sobre la vida y los seres vivos.';
 
   const form = document.createElement('form');
   form.className = 'registration-form';
@@ -73,6 +75,30 @@ function createRegistrationView(onRegister) {
 export function createScreenManager({ root, gameEngine }) {
   if (!(root instanceof Element)) throw new TypeError('Se requiere un elemento raíz para la interfaz.');
   if (!gameEngine || typeof gameEngine.subscribe !== 'function') throw new TypeError('Se requiere un gameEngine válido.');
+  const audio = createAudioController();
+  let lastSoundedAttemptAt = null;
+
+  function createSoundToggle() {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'sound-toggle';
+    const updateLabel = () => {
+      const enabled = audio.soundEnabled;
+      button.replaceChildren(createIcon(enabled ? 'sound' : 'muted'));
+      button.setAttribute('aria-label', enabled ? 'Silenciar sonidos' : 'Activar sonidos');
+      button.setAttribute('aria-pressed', String(!enabled));
+    };
+    button.addEventListener('click', () => { audio.toggle(); updateLabel(); });
+    updateLabel();
+    return button;
+  }
+
+  function mount(content) {
+    const shell = document.createElement('div');
+    shell.className = 'ui-shell';
+    shell.append(createSoundToggle(), content);
+    replaceScreen(root, shell);
+  }
 
   async function registerStudent(name) {
     try {
@@ -84,8 +110,13 @@ export function createScreenManager({ root, gameEngine }) {
   }
 
   function continueAfterFeedback() {
+    const beforeAdvance = gameEngine.getGameState();
     gameEngine.advance();
-    if (gameEngine.getStatus() === 'NEXT_ACTIVITY') gameEngine.startNextActivity();
+    if (gameEngine.getStatus() === 'NEXT_ACTIVITY') {
+      const isFinalMission = beforeAdvance.currentTheme + 1 >= gameEngine.getSnapshot().assignedActivities.length;
+      audio.play(isFinalMission ? 'final' : 'advance');
+      gameEngine.startNextActivity();
+    }
   }
 
   function restart() {
@@ -95,8 +126,8 @@ export function createScreenManager({ root, gameEngine }) {
 
   function render(snapshot) {
     const { status, gameState, assignedActivities, error } = snapshot;
-    if (status === 'REGISTRATION') return replaceScreen(root, createRegistrationView(registerStudent));
-    if (status === 'LOADING') return replaceScreen(root, createStatusCard('Preparando tu misión…', 'Estamos organizando las actividades.'));
+    if (status === 'REGISTRATION') return mount(createRegistrationView(registerStudent));
+    if (status === 'LOADING') return mount(createStatusCard('Preparando tu misión…', 'Estamos organizando las actividades.', false, 'pensando'));
     if (status === 'PLAYING') {
       const assignment = assignedActivities[gameState.currentTheme];
       const screen = document.createElement('div');
@@ -109,13 +140,20 @@ export function createScreenManager({ root, gameEngine }) {
           onSubmit: (answer, justification) => gameEngine.submitAnswer(answer, justification),
         }),
       );
-      return replaceScreen(root, screen);
+      return mount(screen);
     }
-    if (status === 'FEEDBACK') return replaceScreen(root, createFeedbackView({ gameState, onContinue: continueAfterFeedback }));
-    if (status === 'NEXT_ACTIVITY') return replaceScreen(root, createStatusCard('Siguiente misión', '¡Vamos a descubrir algo nuevo!'));
-    if (status === 'FINISHED') return replaceScreen(root, createResultView({ score: gameState.score, onRestart: restart }));
-    if (status === 'ERROR') return replaceScreen(root, createStatusCard('Ocurrió un problema', error || 'Inténtalo nuevamente.', true));
-    return replaceScreen(root, createStatusCard('Vida y seres vivos', 'Comencemos cuando estés listo.'));
+    if (status === 'FEEDBACK') {
+      const latestAttempt = gameState.answers.at(-1);
+      if (latestAttempt?.answeredAt !== lastSoundedAttemptAt) {
+        audio.play(latestAttempt?.correct ? 'correct' : 'incorrect');
+        lastSoundedAttemptAt = latestAttempt?.answeredAt ?? null;
+      }
+      return mount(createFeedbackView({ gameState, onContinue: continueAfterFeedback }));
+    }
+    if (status === 'NEXT_ACTIVITY') return mount(createStatusCard('Siguiente misión', '¡Vamos a descubrir algo nuevo!', false, 'celebrando'));
+    if (status === 'FINISHED') return mount(createResultView({ score: gameState.score, onRestart: restart }));
+    if (status === 'ERROR') return mount(createStatusCard('Ocurrió un problema', error || 'Inténtalo nuevamente.', true));
+    return mount(createStatusCard('Vida y seres vivos', 'Comencemos cuando estés listo.'));
   }
 
   const unsubscribe = gameEngine.subscribe(render);
